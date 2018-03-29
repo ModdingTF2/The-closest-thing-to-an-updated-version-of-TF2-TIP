@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\items/ammo_box1_noalpha"
+
+	"$basemapalphaphongmask" 1
+
+	"$phongexponenttexture" "models\items/ammo_box1_rim" //for the rim mask
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "2"
+
+	"$phongfresnelranges"	"[.3 1 8]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "2"	
+	"$rimmask" 1
+
+}

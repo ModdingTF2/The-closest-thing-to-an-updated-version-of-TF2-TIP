@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\items/medkit_birthday"
+	"$selfillum" "1"
+
+	"$basemapalphaphongmask" 1
+
+	"$phong" "1"
+	"$phongexponent" "4"
+	"$phongboost" "3"
+
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "2"	
+}
+

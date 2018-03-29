@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\items/ammopack_bow"
+	"$selfillum" "1"
+
+	"$basemapalphaphongmask" 1
+
+	"$phong" "1"
+	"$phongexponent" "12"
+	"$phongboost" "1"	
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"	
+}

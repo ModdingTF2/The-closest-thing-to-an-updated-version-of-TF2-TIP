@@ -1,0 +1,40 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\player\items\spy/spy_openjacket_blue"
+	$bumpMap models\player\items\spy\spy_openjacket_normal
+	
+	$lightWarpTexture models\player\pyro\pyro_lightwarp
+	
+	$phong 1
+	$phongFresnelRanges "[0.3 1 8]"
+	
+	$rimLight 1
+	$rimLightExponent 4
+	$rimLightBoost 0.5
+	
+	$blendTintByBaseAlpha 1
+	
+	$colorTintBase "{34 43 68}"
+	$colorTintTemp 0
+	
+	$cloakPassEnabled 1
+	$cloakColorTint "[0.4 0.5 1.0]"
+	
+	Proxies
+	{
+		Spy_Invis
+		{
+		}
+		ItemTintColor
+		{
+			resultVar $colorTintTemp
+		}
+		SelectFirstIfNonZero
+		{
+			srcVar1 $colorTintTemp
+			srcVar2 $colorTintBase
+			resultVar $color2
+		}
+	}
+}
+

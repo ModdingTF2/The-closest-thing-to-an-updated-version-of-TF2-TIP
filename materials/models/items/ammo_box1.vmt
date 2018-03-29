@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+	// Use separate self-illum mask on Post DX9 hardware
+	">=DX90"
+	{
+		"$baseTexture" 	"models\items/ammo_box1_noalpha"
+		"$selfillummask" 	"models\items/item_selfillum"
+	}
+
+	// Use redundant self-illum in base alpha on Pre DX9 hardware
+	"<DX90"
+	{
+		"$baseTexture" 	"models\items/ammo_box1"
+	}
+
+	"$selfillum" "1"
+
+	"$basemapalphaphongmask" 1
+
+	"$phongexponenttexture" "models\items/ammo_box1_rim" //for the rim mask
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "4"
+
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[.3 1 8]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "6"	
+	"$rimmask" 1
+}

@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\items/medkit"
+
+	"$basemapalphaphongmask" 1
+
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "1"
+
+	"$phongfresnelranges"	"[.3 1 8]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"	
+}

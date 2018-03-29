@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/items/tf_gift"
+	"$selfillum" "1"
+
+	"$phong" "1"
+	"$phongexponent" "12"
+	"$phongboost" "1"
+
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 .6]"
+
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"	
+}
