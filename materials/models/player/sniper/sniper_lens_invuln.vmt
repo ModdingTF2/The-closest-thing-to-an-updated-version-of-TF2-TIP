@@ -6,7 +6,7 @@
 	{
 		 	"$bumpmap" "water/dx80_tfwater001_normal"
 	}
-	"$bumpmap" "water/tfwater001_normal"
+	"$bumpmap"     "models/player/shared/shared_normal"
 	"$envmap" "effects/goldcube"
 	"$surfaceprop" "metal"
 	"$halflambert" "1"
@@ -119,7 +119,5 @@
 			"srcVar1" "$invulnphong"
 			"resultVar" "$phongboost" 
 		}
-
-
-
 	}
+}

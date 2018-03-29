@@ -11,8 +11,6 @@
 	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$halflambert" "1"
 
-	"$tempvar" "0"
-	
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
 	"$rimlightboost" ".5"
@@ -23,8 +21,22 @@
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+
+	"$sheenmap" 		"cubemaps\cubemap_sheen001"
+	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
 	"Proxies"
 	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
 		"weapon_invis"
 		{
 		}
@@ -42,34 +54,5 @@
 			"srcVar1"  "$glowcolor"
 			"resultVar" "$color2"
 		}
-		"CommunityWeapon"
-		{
-			"resultVar" "$commweapon"
-		}
-		"Multiply"
-		{
-			"srcVar1"  "$commweapon"
-			"srcVar2"  "$commadd_phongexponent" 
-			"resultVar" "$tempvar" 
-		}
-		"Add"
-		{
-			"srcVar1"  "$tempvar" 
-			"srcVar2"  "$basephongexponent" 
-			"resultVar" "$phongexponent" 
-		}
-		"Multiply"
-		{
-			"srcVar1"  "$commweapon"
-			"srcVar2"  "$commadd_phongboost" 
-			"resultVar" "$tempvar" 
-		}
-		"Add"
-		{
-			"srcVar1"  "$tempvar" 
-			"srcVar2"  "$basephongboost"
-			"resultVar" "$phongboost" 
-		}
-
 	}
 }
