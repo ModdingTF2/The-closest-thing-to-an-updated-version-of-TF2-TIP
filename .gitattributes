@@ -1,0 +1,4 @@
+* text=false
+.gitattributes export-ignore
+docs/ export-ignore
+README.md export-ignore
