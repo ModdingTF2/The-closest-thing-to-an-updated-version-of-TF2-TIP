@@ -22,11 +22,11 @@
 	"$commadd_phongboost" 	"12.5"
 	"$commweapon"		"0"
 
-	"$basemapalphaphongmask" "1"
+	"$bumpmap" "models\weapons\c_items\c_directhit_phongmask"
 	
 	"$rimlight" "1"					
-	"$rimlightexponent" "4"		
-	"$rimlightboost" ".5"
+	"$rimlightexponent" "2"		
+	"$rimlightboost" "1"
 
 	"360?$color2" "[ 0.8 0.8 0.8 ]"
 

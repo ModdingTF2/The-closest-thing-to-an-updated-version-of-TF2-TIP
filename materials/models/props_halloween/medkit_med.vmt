@@ -1,16 +1,17 @@
-"VertexLitGeneric"
+"VertexlitGeneric"
 {
 	"$baseTexture" "models\props_halloween/medkit_med"
-	"$selfillum" "1"
+	"$bumpmap" "models\effects\flat_normal"
 
 	"$phong" "1"
-	"$phongexponent" "8"
-	"$phongboost" "01"	
+	"$phongexponent" "100"
+	"$phongboost" ".5"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[2 0 2]"
 
-	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
-	"$phongfresnelranges"	"[.25 1 4]"
-
-	"$rimlight" "1"
-	"$rimlightexponent" "2"
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "2"										// Exponent for phong component of rim lighting	
 	"$rimlightboost" "1"	
+
 }

@@ -1,16 +1,20 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models\items/medkit"
+	"$selfillum" "1"
 
-	"$basemapalphaphongmask" 1
+	// Use separate self-illum mask on Pre DX9 hardware
+	">=DX90"
+	{
+		"$baseTexture" 		"models\items/medkit_noalpha"
+		"$selfillummask" 	"models\items/item_selfillum"
+	}
 
-	"$phong" "1"
-	"$phongexponent" "8"
-	"$phongboost" "1"
+	// Use redundant self-illum in base alpha on Pre DX9 hardware
+	"<DX90"
+	{
+		"$baseTexture" 	"models\items/medkit"
+	}
 
-	"$phongfresnelranges"	"[.3 1 8]"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "4"
-	"$rimlightboost" "1"	
 }
