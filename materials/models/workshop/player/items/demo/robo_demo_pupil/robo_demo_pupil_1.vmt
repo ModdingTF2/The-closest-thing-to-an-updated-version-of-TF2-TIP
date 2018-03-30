@@ -1,6 +1,7 @@
-"VertexLitGeneric"
+"UnlitTwoTexture"
 {
-	"$basetexture"		"models/workshop/player/items/demo/robo_demo_pupil/robo_demo_pupil_1_color"
+	"$basetexture"			"models/workshop/player/items/demo/robo_demo_pupil/robo_demo_pupil_1_color"
+	"$texture2"				"models/workshop/player/items/demo/robo_demo_pupil/robo_demo_pupil_pixel"
 	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
 	"$phong"		"1"
 	"$phongexponent"		"20.000000"
@@ -9,7 +10,7 @@
 	"$basemapalphaphongmask"		"1"
 	"$rimlight"		"1"
 	"$rimlightexponent"		"4"
-	"$rimlightboost"		".5"
+	"$rimlightboost"		"2"
 	"$bumpmapalphaphongmask"		"1"
 	"$cloakPassEnabled"		"1"
 	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
@@ -17,6 +18,15 @@
 	"$detailblendfactor"		"0"
 	"$detailblendmode"		"6"
 	"$yellow"		"0"
+	
+	"$jumpchance" 0.0
+	"$jumpchancethreshold" 4
+	"$nojump" 0.0
+	"$jumpdistance" 0.0
+	"$translate1" "[0.0 0.0]"
+	"$translate2" "[0.0 0.0]"
+	"$scale2" "[3 3]"
+	
 	">=DX90"
 	{
 		"$selfillum"		"1"
@@ -26,12 +36,6 @@
 	{
 		"weapon_invis"
 		{
-		}
-		"AnimatedTexture"
-		{
-			"animatedtexturevar"		"$detail"
-			"animatedtextureframenumvar"		"$detailframe"
-			"animatedtextureframerate"		"30"
 		}
 		"BurnLevel"
 		{
@@ -46,5 +50,52 @@
 			"srcVar1"		"$yellow"
 			"resultVar"		"$color2"
 		}
+        "GaussianNoise"
+        {
+            "mean" 0.5
+            "halfWidth" 0.2
+            "minVal" 0.0
+            "maxVal" 1.0
+            "resultVar" "$jumpchance"            
+        }
+        "GaussianNoise"
+        {
+            "mean" 0
+            "halfWidth" 0.05
+            "minVal" -0.1
+            "maxVal" 0.1
+            "resultVar" "$jumpdistance"            
+        }
+        "LessOrEqual"
+        {
+            "srcVar1" "$jumpchance"
+            "srcVar2" "$jumpchancethreshold"
+            "lessEqualVar" "$nojump"
+            "greaterVar" "$jumpdistance"
+            "resultVar" "$translate1[1]"
+        }
+        "TextureTransform"
+        {
+            "translateVar" "$translate1"
+            "resultVar" "$basetexturetransform"
+        }
+        "UniformNoise"
+        {
+            "minVal" 0.0
+            "maxVal" 1.0
+            "resultVar" "$translate2[0]"            
+        }
+        "UniformNoise"
+        {
+            "minVal" 0.0
+            "maxVal" 1.0
+            "resultVar" "$translate2[1]"            
+        }
+        "TextureTransform"
+        {
+            "translateVar" "$translate2"
+            "scaleVar" "$scale2"
+            "resultVar" "$texture2transform"
+        }
 	}
 }
