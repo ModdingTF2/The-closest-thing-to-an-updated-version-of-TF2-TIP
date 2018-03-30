@@ -1,0 +1,56 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/spy/robo_spy_bootleg_billycock/robo_spy_bootleg_billycock_1_color"
+	"$lightwarptexture"		"models/buildables/sentry1/sentry1_lightwarp"
+	"$phong"		"1"
+	"$phongexponent"		"0.000000"
+	"$phongboost"		"0.000000"
+	"$phongfresnelranges"		"[.25 .5 1]"
+	"$rimlight"		"1"
+	"$rimlightexponent"		"0.000000"
+	"$rimlightboost"		"0.000000"
+	"$bumpmapalphaphongmask"		"1"
+	"$additive"		"1"
+	"$cloakPassEnabled"		"1"
+	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"		"5"
+	"$detailblendfactor"		"0"
+	"$detailblendmode"		"6"
+	"$yellow"		"0"
+	">=DX90"
+	{
+		"$selfillum"		"1"
+	}
+	"$selfillumtint"		"[1 1 1]"
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+		"TextureScroll"
+		{
+			"textureScrollVar"		"$basetexturetransform"
+			"textureScrollRate"		1
+			"textureScrollAngle"	90
+		}
+	}
+}
