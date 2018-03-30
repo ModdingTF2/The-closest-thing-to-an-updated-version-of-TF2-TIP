@@ -1,0 +1,67 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\all_class/hwn_ghost_pj"
+	"$detailscale" "3"
+	"$detailblendfactor" 2
+	"$detailblendmode" 1
+//	"$color2" "[0 0 12]"
+
+	"$bumpmap" "models/effects/flat_normal"
+//	"$nocull" "1"
+
+	"$selfillum" "1"
+	"$selfillumtint" "[0.8 0.5 5]"
+	"$selfIllumFresnel" "1"
+	"$selfIllumFresnelMinMaxExp" "[2 1 .1]"
+
+	"$phong" "1"
+	"$phongexponent" "1"
+	"$phongboost" "1"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[0 0 20]"
+//	"$basealphaenvmapmask" "1"
+ 
+
+//	"$basemapalphaphongmask" "1"
+//	"$envmap" "effects/cubemapper"
+//	"$envmapcontrast" 1
+//	"$envmaptint" "[0.0 2.0 2.5]"
+
+
+	"$rimlight" "1"												
+	"$rimlightexponent"	 "4"
+	"$rimlightboost" "20"	
+
+"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 24
+		}
+		"Sine"
+		{
+			"sinemin" "0.8"
+			"sinemax" "1.2"
+			"sineperiod" "2"
+			"resultVar" "$selfillumtint[0]"
+		}
+		"Sine"
+		{
+			"sinemin" "5"
+			"sinemax" "15"
+			"sineperiod" "2"
+			"resultVar" "$selfillumtint[2]"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar" "$detailtexturetransform"
+			"texturescrollrate" -.08
+			"texturescrollangle" 45
+		}
+	
+
+
+	}
+}

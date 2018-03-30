@@ -1,0 +1,36 @@
+"UnLitTwoTexture"
+{
+	"$basetexture"	"models/player/items/all_class/chess_hologram_blue"
+	"$texture2"	"models/effects/cappoint_beam_lines_b"
+	"$additive" "1"
+	"$model" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent"	 "4"				
+	"$rimlightboost" ".5"
+	"$rimmask" "1"
+	
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" .1
+			"texturescrollangle" 90
+		}
+		"Sine"
+		{
+			"Sineperiod" ".05"
+			"SineMax" "1"
+			"SineMin" ".8"
+			"resultVar" "$color"
+		}
+	}
+}

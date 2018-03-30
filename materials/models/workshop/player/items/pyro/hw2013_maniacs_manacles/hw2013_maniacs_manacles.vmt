@@ -1,0 +1,54 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/pyro/hw2013_maniacs_manacles/hw2013_maniacs_manacles_color"
+	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
+	"$phong"		"1"
+	"$phongexponent"		"10.000000"
+	"$phongboost"		"4.000000"
+	"$phongfresnelranges"		"[.25 .5 1]"
+	"$basemapalphaphongmask"		"1"
+	"$rimlight"		"1"
+	"$rimlightexponent"		"4"
+	"$rimlightboost"		".5"
+	"$halflambert"		"1"
+	"$bumpmapalphaphongmask"		"1"
+	"$basealphaenvmapmask"		"1"
+	"$normalmapalphaenvmapmask"		"0"
+	"$cloakPassEnabled"		"1"
+	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"		"5"
+	"$detailblendfactor"		"0"
+	"$detailblendmode"		"6"
+	"$yellow"		"0"
+	">=DX90"
+	{
+		"$selfillum"		"0"
+		"$envmap"		"env_cubemap"
+		"$envmaptint"		"[0.156863 0.156863 0.156863]"
+	}
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+	}
+}

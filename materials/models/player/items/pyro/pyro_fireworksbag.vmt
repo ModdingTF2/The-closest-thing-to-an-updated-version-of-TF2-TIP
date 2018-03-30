@@ -1,0 +1,72 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\pyro/pyro_fireworksbag"
+	"$bumpmap" "models\player\items\pyro/pyro_fireworksbag_normal"
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+
+	"$yellow" "0"
+	"$one" "1"
+
+	 "$blendtintbybasealpha" "1" 
+ 	"$blendtintcoloroverbase" "0"	
+
+	"$colortint_base" "{180 80 67 }"  		
+	"$color2" "{180 80 67 }"  
+	"$colortint_tmp" " {0 0 0}"	
+	
+	"$phong" "1"
+	"$PhongExponent" "2"
+	"$PhongBoost" "133"
+	"$LightWarpTexture" "models/player/pyro/pyro_lightwarp"
+	"$PhongFresnelRanges" "{ .3 .5 2 }"
+
+	//"$BumpMapAlphaPhongMask" "1"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "10"
+	"$rimlightboost" ".5"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+  		"ItemTintColor"
+  		{
+   			"resultVar" "$colortint_tmp"
+  		}
+  		"SelectFirstIfNonZero"
+  		{
+   			"srcVar1" "$colortint_tmp"
+   			"srcVar2" "$colortint_base"
+   			"resultVar" "$color2"
+  		}
+	}
+}
+
+
+

@@ -1,0 +1,76 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\scout/scout_gloves"
+	"$bumpmap" "models\player\items\scout\scout_gloves_normal.vtf"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "1"
+	"$detailblendfactor" ".01"
+	"$detailblendmode" "3"
+
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "12"
+	"$phongboost" ".7"
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"	
+	"$phongfresnelranges"	"[.25 .5 2]"
+	
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	// Paintability
+//	"$color2" "{58 49 46}"			// Paint - Also used to test paint in HLMV
+	"$colortint_base" "{58 49 46}"		// Default with no paint
+	"$colortint_tmp" "[0 0 0]"			// The paint color from the item server
+
+	"$blendtintbybasealpha" "1"			// Use the base alpha mask to identify the paintable areas
+	"$blendtintcoloroverbase" "0"			// Replace the base color (1) or tint over the base color (0)
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+  		}
+  		"SelectFirstIfNonZero"
+  		{
+   			"srcVar1" "$colortint_tmp"
+   			"srcVar2" "$colortint_base"
+   			"resultVar" "$color2"
+  		}
+		"ItemTintColor"		// Gets the paint color
+		{
+			"resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"	// If there is a paint color according to the item server, apply it
+		{
+			"srcVar1" "$colortint_tmp"
+			"srcVar2" "$colortint_base"
+			"resultVar" "$color2"
+		}
+
+	}
+}

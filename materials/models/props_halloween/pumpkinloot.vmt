@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	<dx90
+	{
+		 	"$fallbackmaterial" "models\props_halloween/pumpkinloot_dx80"
+	}
+	"$baseTexture" "models\props_halloween/pumpkinloot"
+
+	"$selfillum" "1"
+	"$selfillumtint" "[2 2 2]"
+
+	"$phong" "1"
+	"$phongexponent" "30"
+	"$phongboost" ".5"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[2 0 2]"
+	"$basemapalphaphongmask" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"	
+
+}

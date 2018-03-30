@@ -1,0 +1,41 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\weapons\v_baseball\baseball_sheet"
+	"$bumpmap" "models\weapons\v_baseball\baseball_normal"
+
+	"$phong" "1"
+	"$phongexponent" "100"
+	"$phongboost" "1"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[.05 .15 .25]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" ".5"
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

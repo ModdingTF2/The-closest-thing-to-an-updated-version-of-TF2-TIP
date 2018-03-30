@@ -1,0 +1,56 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/items/pyro/ghost_suit_cover_red"
+	"$bumpmap" "models\effects\flat_normal"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" 0.1
+	"$detailblendmode" 6
+
+	"$yellow" "0"
+	"$one" "1"
+
+
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+
+	"$phong" "0"
+	"$phongexponent" "2"
+	"$phongboost" "0.1"
+	"$phongfresnelranges"	"[3 2.5 3]"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+
+	}
+}

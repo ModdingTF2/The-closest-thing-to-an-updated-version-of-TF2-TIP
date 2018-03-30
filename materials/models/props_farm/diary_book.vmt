@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "Models/props_farm/diary_book"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" ".5"
+
+	"$basephongexponent" "2"
+	"$basephongboost" "20"
+
+//	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".5"
+	"$rimmask" "1"
+	"$phongalbedotint" "1"
+
+}

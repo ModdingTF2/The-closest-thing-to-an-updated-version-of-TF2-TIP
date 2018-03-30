@@ -1,0 +1,50 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/pyro/hwn_pyro_coffinpack"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "0.01"
+	"$detailblendfactor" 0.05
+	"$detailblendmode" 6
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "3"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 2]"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"				
+	"$rimlightexponent" "10"											"$rimlightboost" ".5"	
+	
+	
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

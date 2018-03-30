@@ -1,0 +1,54 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/medic/as_medic_cloud_hat"
+
+//	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+//	"$detailscale" "5"
+//	"$detailblendfactor" .01
+//	"$detailblendmode" 6
+
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "40"
+	"$phongboost" "3"
+//	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+	"$basemapalphaphongmask"	"1"
+
+	">=DX90"
+	{
+		"$envmap" "effects/saxxy/saxxy_gold"
+		"$envmaptint" "[.0 .0 .0]"
+	}
+
+
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent"	 "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"
+
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

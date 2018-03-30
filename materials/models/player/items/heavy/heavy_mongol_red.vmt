@@ -1,0 +1,66 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\heavy/heavy_mongol"
+	"$bumpmap" "models\player\items\heavy/heavy_mongol_normal" 
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "1"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+
+	"$blendtintbybasealpha" "1"
+	"$blendtintcoloroverbase" "0"
+
+
+	"$colortint_base" "{179 76 79}"
+	"$colortint_tmp" "[0 0 0]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".5"
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar" "$colortint_tmp" //dump the paint values into the temp variable
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1" "$colortint_tmp" //if this !=0, use it
+			"srcVar2" "$colortint_base"//otherwise, use the base color
+			"resultVar" "$color2" //finally apply the correct color to the color2 parameter
+					//you can use anything that's a color-based parameter here instead of $color2, depending on the desired effect.
+		}
+
+	}
+}

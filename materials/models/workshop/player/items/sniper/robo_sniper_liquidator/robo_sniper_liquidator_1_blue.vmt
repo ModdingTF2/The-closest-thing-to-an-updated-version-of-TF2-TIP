@@ -1,0 +1,45 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/sniper/robo_sniper_liquidator/robo_sniper_liquidator_1_blue_color"
+	"$lightwarptexture"		"models/weapons/c_items/c_ambassador_lightwarp"
+	"$phong"		"1"
+	"$phongexponent"		"55.000000"
+	"$phongboost"		"3.000000"
+	"$phongfresnelranges"		"[.25 .5 1]"
+	"$rimlight"		"1"
+	"$rimlightexponent"		"4"
+	"$rimlightboost"		".5"
+	"$bumpmapalphaphongmask"		"1"
+	"$cloakPassEnabled"		"1"
+	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"		"5"
+	"$detailblendfactor"		"0"
+	"$detailblendmode"		"6"
+	"$yellow"		"0"
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+	}
+	"$basemapalphaphongmask"		"1"
+}

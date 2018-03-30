@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "Models/props_farm/banana_peel"
+	"$selfillum" "1"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" ".5"
+//	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".5"
+}

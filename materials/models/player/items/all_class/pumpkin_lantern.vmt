@@ -1,0 +1,84 @@
+"VertexLitGeneric"
+{
+ 	"$basetexture" "models/player/items/all_class/pumpkin_lantern"
+ 	"$surfaceprop" "metal"
+ 	"$yellow" "0"
+   
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$halflambert" "1"
+    
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+  
+	"$blendtintbybasealpha" "0"     // Enabling this creates trouble in combination with $selfillum!!!
+ 	"$blendtintcoloroverbase" "0"
+	"$colortint_base" "{254 168 67}"
+	"$colortint_tmp" "[0 0 0]"	
+ 	"$color2" "{254 168 67}"
+  
+	">=DX90"
+       	{
+              "$selfillum" "1"
+       	}
+	"$selfillummask" "models/player/items/all_class/pumpkin_lantern_selfillum"
+	"$selfillumtint" "[1.5 1.5 1.5]"
+  
+	"$phong" "1"
+ 	"$phongexponent" "5"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[.01 .04 .1]"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "4"				
+	"$rimlightboost" ".5"
+
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+  		  "vm_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+    		"Equals"
+		{
+			"srcVar1" "$yellow"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+		{
+		  "resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+		  "srcVar1" "$colortint_tmp"
+		  "srcVar2" "$colortint_base"
+		  "resultVar" "$color2"
+		}
+   		 "Sine"
+		{
+			"resultVar" "$selfillumtint"
+			"sineperiod" "3"
+			"sinemin" "1.5"
+			"sinemax" "2"
+		}
+	}
+}

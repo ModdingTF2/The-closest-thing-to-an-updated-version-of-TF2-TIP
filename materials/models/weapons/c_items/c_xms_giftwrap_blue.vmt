@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/c_items/c_xms_giftwrap_blue"
+	"$bumpmap" "models/effects/flat_normal" 
+
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" 1
+	"$envmaptint" "[.3 .3 .2]"
+	"$envmapsaturation" 0.5
+	"$basemapalphaphongmask" 1
+
+	"$phong" "1"
+	"$phongexponent" "200"
+	"$phongboost" "7.5"
+	"$phongfresnelranges"	"[.2 .4 .8]"
+
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "4"				
+	"$rimlightboost" ".5"
+}
+
+

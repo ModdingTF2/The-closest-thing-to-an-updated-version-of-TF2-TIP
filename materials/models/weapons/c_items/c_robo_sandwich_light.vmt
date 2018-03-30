@@ -1,0 +1,64 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\weapons\c_items/c_robo_sandwich"
+	"$basemapalphaphongmask" 1
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$selfillum" 1
+	
+	//phong properties
+	"$phong"	"1"
+	"$phongboost"	"5"
+	"$phongexponent"	"55"
+	"$phongfresnelranges"	"[1 2 2.5]"
+	"$rimlight"	"1"
+	"$rimlightexponent"	"35"
+
+	"$envmap" "env_cubemap"
+//	"$envmaptint" "[.5 .5 .5]"
+	"$baseAlphaEnvMapMask" "1" 
+
+
+	"$glowcolor" "1"
+
+	"360?$color2" "[ 0.9 0.8 0.8 ]"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+		Sine
+		{
+			"resultVar"	"$selfillumtint" 
+		        "sineperiod"	2
+			"sinemin"       0
+			"sinemax"	10
+		}
+
+		Sine
+		{
+			"resultVar"	"$envmaptint" 
+		        "sineperiod"	2
+			"sinemin"       0
+			"sinemax"	.35
+		}
+
+	}
+}

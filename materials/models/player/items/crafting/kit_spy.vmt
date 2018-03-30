@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\crafting/kit_spy"
+	"$bumpmap" "models\effects\flat_normal" 
+
+	"$phong" "1"
+	"$phongexponent" "45"
+	"$phongboost" ".1"
+//	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"	
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$basemapalphaphongmask" "1"
+
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"
+}

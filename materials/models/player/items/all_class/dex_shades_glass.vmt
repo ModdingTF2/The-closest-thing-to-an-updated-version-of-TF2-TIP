@@ -1,0 +1,59 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/all_class/dex_shades"	
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "0.7"
+	"$phongboost" "1.60"
+	"$phongfresnelranges" "[.25 .5 1]"
+	"$basemapalphaphongmask" "1"
+
+//	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongwarptexture"  "models/player/items/all_class/dex_shades_phongwarp"
+
+	">=DX90"
+	{
+		"$envmap" "effects/goldcube"
+		"$envmaptint" "[0.06 0.04 0.01]"
+	}
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "20"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+
+	}
+}

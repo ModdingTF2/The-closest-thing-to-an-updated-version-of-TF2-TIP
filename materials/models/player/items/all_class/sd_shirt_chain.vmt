@@ -1,0 +1,44 @@
+"VertexLitGeneric"
+{
+	$baseTexture "\models\player\items\all_class\sd_shirt.vtf"
+	"$phongtint" 			"[0.8 0.9 1]"
+	"$phong" "1"
+	"$phongexponent" "1"
+	"$phongboost" "3"	
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$basemapalphaphongmask" "1"
+
+	"$lightwarptexture" "models\weapons\c_items/c_pocket_watch_lightwarp"
+	"$phongwarptexture"  "models\weapons\c_items/c_pocket_watch_phongwarp"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" ".5"
+
+	"360?$color2" "[ 0.9 0.8 0.8 ]"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

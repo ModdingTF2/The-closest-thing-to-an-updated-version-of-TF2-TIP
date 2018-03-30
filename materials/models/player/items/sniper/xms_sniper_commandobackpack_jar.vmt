@@ -1,0 +1,53 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\player\items\sniper\xms_sniper_commandobackpack_jar"
+	"$bumpmap"	"models\player\items\sniper\xms_sniper_commandobackpack_phongmask_jar"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "1.5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+	"$yellow" "0"
+
+	"$additive"	1
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.6 .6 .5]"
+
+	"$phong" "1"
+	"$phongexponent" "65"
+	"$phongfresnelranges" "[1 2 4]"
+	"$lightwarptexture" "models/lightwarps/jarate_lightwarp"
+	"$phongboost" "6"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".5"
+
+"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+
+}

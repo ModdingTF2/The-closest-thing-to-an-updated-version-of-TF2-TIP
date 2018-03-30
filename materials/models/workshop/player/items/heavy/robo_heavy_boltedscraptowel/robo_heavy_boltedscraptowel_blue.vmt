@@ -1,0 +1,61 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/heavy/robo_heavy_boltedscraptowel/robo_heavy_boltedscraptowel_color"
+	"$bumpmap"		"models/workshop/player/items/heavy/robo_heavy_boltedscraptowel/robo_heavy_boltedscraptowel_normal"
+	"$phong"		"1"
+	"$phongboost"		"2"
+	"$phongfresnelranges"		"[.5 .7 1]"
+	"$phongexponenttexture"		"models\bots\heavy\heavy_bot_exp"
+	"$lightwarptexture"		"models/lightwarps/robot_lightwarp"
+	"$rimlight"		"1"
+	"$rimlightexponent"		"1"
+	"$rimlightboost"		".5"
+	"$rimmask"		"1"
+	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512.vtf"
+	"$detailscale"		"5"
+	"$detailblendfactor"		"0.010000"
+	"$detailblendmode"		"6"
+	"$yellow"		"0"
+	"$one"		"1"
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"1"
+	"$colortint_base"		"{ 56 128 178 }"
+	"$color2"		"{ 56 128 178 }"
+	"$colortint_tmp"		"[0 0 0]"
+	"$cloakPassEnabled"		"1"
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
+	}
+}

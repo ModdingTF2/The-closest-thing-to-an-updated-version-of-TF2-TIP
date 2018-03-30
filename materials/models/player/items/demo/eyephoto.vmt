@@ -1,0 +1,47 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/player/items/demo/eyephoto"
+
+
+	"$basemapalphaphongmask" "1"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "0.5"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+//	"$lightwarptexture" "models\weapons\c_items\c_ambassador_lightwarp"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+
+	"$tempvar" "0"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "25"	
+	"$rimlightboost" ".5"
+	
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+	}
+}
+

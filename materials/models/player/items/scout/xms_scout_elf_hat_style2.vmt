@@ -1,0 +1,92 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/items/scout/xms_scout_elf_hat_style2"
+	"$bumpmap" "models/effects/flat_normal" 
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+	"$yellow" "0"
+	"$nocull" "1"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "1"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+//	"$basemapalphaphongmask" "0"
+
+ 	"$blendtintbybasealpha" "1" 
+ 	"$blendtintcoloroverbase" "0"  
+
+	"$colortint_base" "{179 79 79}"
+	"$colortint_tmp" "[0 0 0]" 
+
+	//"$color2" "{179 76 79}"   // Stock Red
+	//"$color2" "{94 124 170}"  // Stock Blu
+	//"$color2" "{233 150 122}" // Dark Salmon Injustice
+	//"$color2" "{207 115 54}"  // Mann Co. Orange
+	//"$color2" "{240 230 140}" // The Color of a Gentlemann's Business Pants
+	//"$color2" "{231 181 59}"  // Australium Gold
+	//"$color2" "{50 205 50}"   // The Bitter Taste of Defeat and Lime
+	//"$color2" "{114 158 66}"  // Indubitably Green
+	//"$color2" "{128 128 0}"   // Drably Olive
+	//"$color2" "{66 79 59}"    // Zephaniah's Greed
+	//"$color2" "{47 79 79}"    // A Color Similar to Slate
+	//"$color2" "{216 190 216}" // Color No. 216-190-216
+	//"$color2" "{255 105 180}" // Pink as Hell
+	//"$color2" "{125 64 113}"  // A Deep Commitment to Purple
+	//"$color2" "{81 56 74}"    // Noble Hatter's Violet
+	//"$color2" "{230 230 230}" // An Extraordinary Abundance of Tinge
+	//"$color2" "{197 175 145}" // Particularly Drab Tincture
+	//"$color2" "{165 117 69}"  // Muskelmannbraun
+	//"$color2" "{126 126 126}" // Aged Moustache Grey
+	//"$color2" "{124 108 87}"  // Ye Olde Rustic Color
+	//"$color2" "{105 77 58}"	// Radigan Conagher Brown
+	//"$color2" "{20 20 20}"    // A Distinctive Lack of Hue
+	//"$color2" "{184 56 59}"   // Team Spirit (RED)
+	//"$color2" "{88 133 162}"	// Team Spirit (BLU)
+
+	// Rim lighting parameters
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".5"
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+
+	}
+}

@@ -1,0 +1,56 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\player\items\mvm_loot\engineer\robo_engy_hat_blue"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale" "5"
+	"$detailblendfactor" 0
+	"$detailblendmode" 1
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "25"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 4]"
+
+	"$basemapalphaphongmask" "1"
+	"$basephongexponent" "1"
+	"$basephongboost" ".2"  
+
+	"$rimlight" "1"
+	"$rimlightexponent"	 "4"
+	"$rimlightboost" ".5"
+
+	"$one" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"360?$color2" "[ 0.65 0.65 0.7 ]"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

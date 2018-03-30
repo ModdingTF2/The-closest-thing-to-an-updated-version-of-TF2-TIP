@@ -1,0 +1,63 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\engineer/engineer_chaps_style"
+
+	"$phong" "1"
+	"$phongexponent" "1"
+	"$phongboost" ".15"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.1 1 1]"
+	"$halflambert" "1"
+
+	"$yellow" "0"
+	"$one" "1"
+
+	"$blendtintbybasealpha" "1" 
+//	"$blendtintcoloroverbase" "1"  
+
+	"$colortint_base" "{183 162 130}"     
+	"$colortint_tmp" "[0 0 0]" 
+
+	// Rim lighting parameters
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"rimlightboost" "2"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+
+	}
+}
+

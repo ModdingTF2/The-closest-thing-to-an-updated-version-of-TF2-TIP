@@ -1,0 +1,45 @@
+"VertexlitGeneric"
+{
+
+	"$basetexture" "models\player\items\soldier\ds_can_grenades"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"	
+	"$basemapalphaphongmask" "1"
+	"$phongfresnelranges"	"[.3 .5 3]"
+	"$halflambert" "1"
+	"$glowcolor" "1"
+
+	"$nocull" "1"
+
+	"$tempvar" "0"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "5"				
+	"$rimlightboost" ".5"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}
+

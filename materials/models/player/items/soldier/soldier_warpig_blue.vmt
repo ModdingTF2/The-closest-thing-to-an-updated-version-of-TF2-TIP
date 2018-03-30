@@ -1,0 +1,63 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\soldier/soldier_warpig"
+	"$bumpmap"  "models\player\items\soldier\soldier_warpig_normal"
+
+	"$yellow" "0"
+	"$phongtint" "{220 220 195}" 
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "2.5"     
+	"$phongfresnelranges"	".25 1 4"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp" 	
+
+	"$rimlight" "1"											
+	"$rimlightexponent" "6"										
+	"$rimlightboost" ".5"		
+
+ 	"$blendtintbybasealpha" "1" 
+ 	"$blendtintcoloroverbase" "0"  
+
+	"$color2" "{ 70 80 100 }"
+	"$colortint_base" "{ 70 80 100 }"  
+	"$colortint_tmp" "{ 0 0 0 }" 
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+  		"ItemTintColor"
+  		{
+   			"resultVar" "$colortint_tmp"
+  		}
+  		"SelectFirstIfNonZero"
+  		{
+   			"srcVar1" "$colortint_tmp"
+   			"srcVar2" "$colortint_base"
+   			"resultVar" "$color2"
+  		}
+
+	}
+}

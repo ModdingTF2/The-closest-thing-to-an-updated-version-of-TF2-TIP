@@ -1,0 +1,104 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models/player/items/scout/scout_headband.vtf"
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "0.01"               
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"  	
+	"$phongfresnelranges"	"[.25 1 4]"
+
+	"$basemapalphaphongmask" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"	
+
+	"$blendtintbybasealpha" "1"
+	"$blendtintcoloroverbase" "0"
+	
+	"$colortint_base" "{134 51 43}"
+	"$colortint_tmp" "{0 0 0}"
+
+//	"$color2" "{255 105 180}" 
+			
+	
+//"$color2" "{128 56 57}" //
+//"$color2" "{230 230 230}" // An Extraordinary Abundance of Tinge
+//"$color2" "{216 190 216}" // Color No. 216-190-216
+//"$color2" "{197 175 145}" // Peculiarly Drab Tincture
+//"$color2" "{126 126 126}" // Aged Moustache Grey
+//"$color2" "{20 20 20}"    // A Distinctive Lack of Hue
+//"$color2" "{105 77 58}"   // Radigan Conagher Brown
+//"$color2" "{124 108 87}"  // Ye Olde Rustic Color
+//"$color2" "{165 117 69}"  // Muskelmannbraun
+//"$color2" "{231 181 59}"  // Australium Gold
+//"$color2" "{240 230 140}" // The Color of a Gentlemann's Business Pants
+//"$color2" "{233 150 122}" // Dark Salmon Injustice
+//"$color2" "{207 115 54}"  // Mann Co. Orange
+//"$color2" "{255 105 180}" // Pink as Hell
+//"$color2" "{125 64 113}"  // A Deep Commitment to Purple
+//"$color2" "{81 56 74}"    // Noble Hatter's Violet
+//"$color2" "{47 79 79}"    // A Color Similar to Slate
+//"$color2" "{50 205 50}"   // The Bitter Taste of Defeat and Lime
+//"$color2" "{114 158 66}"  // Indubitably Green
+//"$color2" "{128 128 0}"   // Drably Olive
+//"$color2" "{66 79 59}"    // Zephaniah's Greed
+//"$color2" "{101 71 64}" // An Air of Debonair (RED)
+//"$color2" "{40 57 77}" // An Air of Debonair (BLU)
+//"$color2" "{59 31 35}" // Balaclavas Are Forever (RED)
+//"$color2" "{24 35 61}" // Balaclavas Are Forever (BLU)
+//"$color2" "{195 108 45}" // Cream Spirit (RED)
+//"$color2" "{184 128 53}" // Cream Spirit (BLU)
+//"$color2" "{72 56 56}" // Operator's Overalls (RED)
+//"$color2" "{56 66 72}" // Operator's Overalls (BLU)
+"$color2" "{184 56 59}"   // Team Spirit (RED)
+//"$color2" "{88 133 162}"  // Team Spirit (BLU)
+//"$color2" "{128 48 32}" // The Value of Teamwork (RED)
+//"$color2" "{37 109 141}" // The Value of Teamwork (BLU)
+//"$color2" "{168 154 140}" // Waterlogged Lab Coat (RED)
+//"$color2" "{131 159 163}" // Waterlogged Lab Coat (BLU)
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+  		"ItemTintColor"
+  		{
+   			"resultVar" "$colortint_tmp"
+  		}
+  		"SelectFirstIfNonZero"
+ 		{
+   			"srcVar1" "$colortint_tmp"
+   			"srcVar2" "$colortint_base"
+   			"resultVar" "$color2"
+  		}
+
+	}
+}
+

@@ -1,0 +1,64 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\player\items\pyro\xms_pyro_bells"
+
+	"$phong" "1"
+	"$phongexponent" "55"
+	"$phongboost" "2"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$basemapalphaphongmask" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1.5 1.5 1.5]"
+	"$envmapcontrast" "1"
+	"$envmapsaturation" "1.0"
+	"$multipass" "1"
+
+ 	"$blendtintbybasealpha" "1" 
+	"$blendtintcoloroverbase" "1"  
+
+	"$colortint_base" "{247 221 8}"
+	"$colortint_tmp" "[0 0 0]" 
+
+	"$rimlight" "1"
+	"$rimlightexponent"	 "4"	
+	"$rimlightboost" ".5"
+
+	"360?$color2" "[ 0.9 0.8 0.8 ]"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+	}
+}

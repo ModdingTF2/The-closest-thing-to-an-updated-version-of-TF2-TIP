@@ -1,0 +1,75 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/all_class/UGC9_body"
+    "$bumpmap" "models/player/items/all_class/UGC9_normal"
+
+	"$halflambert" "1"
+	
+	"$yellow" "0"
+
+ 	"$blendtintbybasealpha" "1" 
+ 	"$blendtintcoloroverbase" "0"  
+	
+                "$envmap" "effects/saxxy/saxxy_gold"
+	"$envmaptint" "[1 .95 .3]"
+                 "$normalmapalphaenvmapmask" "1"
+
+        "$color2" "{ 253 180 76 }"  
+        "$colortint_base" "{ 253 180 76 }"  
+        "$colortint_tmp" "{ 1 1 1 }"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$phongwarptexture"  "models/weapons/c_items/c_pomson_phongwarp"
+
+	"$rimlight" "1"
+	"$rimlightexponent"	 "4"	
+	"$rimlightboost" ".5"
+
+	"360?$color2" "[ 0.9 0.8 0.8 ]"
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+
+	}
+}

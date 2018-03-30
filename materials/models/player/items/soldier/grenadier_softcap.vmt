@@ -1,0 +1,44 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\soldier/grenadier_softcap"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "0.8"	
+	"$phongfresnelranges" "[1.5 .5 3]"
+	"halflambert" "1"
+	"$basemapalphaphongmask" "1"
+	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" ".5"
+
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

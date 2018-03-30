@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_halloween/halloween_demoeye_lid"
+	"$bumpmap" "models\effects\flat_normal"
+
+	"$phong" "1"
+	"$phongexponent" "100"
+	"$phongboost" ".5"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[2 0 2]"
+	"$basemapalphaphongmask" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"	
+
+}

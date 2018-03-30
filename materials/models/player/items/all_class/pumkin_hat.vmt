@@ -1,0 +1,57 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/all_class/pumkin_hat"
+	"$bumpmap" "models/player/items/all_class/pumkin_hat_normal" 
+	"$detail" "models/player/items/all_class/pumkin_hat_glow" 
+	"$detailscale" "1"
+	"$detailblendfactor" 1
+	"$detailblendmode" 5
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "9"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+
+
+	"$rimlight" "1"
+	"$rimlightexponent"	 "4"
+	"$rimlightboost" ".5"
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"Sine"
+		{
+			"sinemax" "1"
+			"sinemin" ".25"
+			"sineperiod" "2"
+			"resultvar" "$detailblendfactor"
+		}
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+// This is commented out because it conflicts with the Sine proxy.
+//		"BurnLevel"
+//		{
+//			"resultVar" "$detailblendfactor"
+//		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

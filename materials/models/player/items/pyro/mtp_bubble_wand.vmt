@@ -1,0 +1,54 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/player/items/pyro/mtp_bubble_wand"
+	"$basemapalphaphongmask" 1
+
+	//phong properties
+	"$phong"	"1"
+	"$phongboost"	"1"
+	"$phongexponent"	"20"
+	"$phongfresnelranges"	"[1 2 2.5]"
+
+	"$rimlight" "1"
+	"$rimlightexponent"	 "4"	
+	"$rimlightboost" ".5"
+
+ 	"$blendtintbybasealpha" "0" 
+	"$blendtintcoloroverbase" "1"  
+
+	"$colortint_base" "{157 15 38}"
+	"$colortint_tmp" "[0 0 0]" 
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+	
+	}
+}

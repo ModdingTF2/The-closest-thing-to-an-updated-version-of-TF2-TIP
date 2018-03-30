@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_halloween/skull_island_skullhat"
+//	"$basemapalphaphongmask" 1 
+
+	"$phong" "1"
+	"$phongexponent" "180"
+	"$phongboost" "4"	
+	"$phongfresnelranges"	"[1 2 4]"
+
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+
+
+	"$halflambert" "0"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+}

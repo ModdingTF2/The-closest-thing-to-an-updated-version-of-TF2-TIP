@@ -1,0 +1,33 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/items/medic/as_medic_cloud_hat"
+
+	"$basephongexponent" "250"
+	"$basephongboost" "55"
+
+	">=DX90"
+	{
+		"$envmap" "effects/saxxy/saxxy_gold"
+		"$envmaptint" "[4.65 3.45 3.25]"
+	}
+
+//	
+"$normalmapalphaenvmapmask" "1"
+	"$basemapalphaphongmask"	"0"
+
+	"$phong" "1"
+	"$phongexponent" "100"
+	"$phongboost" "2.5"
+	"$phongfresnelranges"	"[.2 1 4]"
+		
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+
+	"$glowcolor" "1"
+	"$tempvar" "0"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".5"
+
+	}
+

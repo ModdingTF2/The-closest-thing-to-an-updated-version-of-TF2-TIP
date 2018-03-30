@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/items/sniper/pro_hat_frames"
+	"$bumpmap" "models/effects/flat_normal" 
+	
+	"$phongtint" "[1 .5 .2]"
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "2"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[1 5 10]"
+	"$basemapalphaphongmask" "1"
+	"$nocull" 1
+	"$rimlight" "1"
+	"$rimlightexponent" "5"										// Exponent for phong component of 	rim lighting	
+//	"$rimlightboost" ".3"										// Boost for ambient cube 	component of rim lighting
+	"$rimlightboost" "0"	
+	
+}

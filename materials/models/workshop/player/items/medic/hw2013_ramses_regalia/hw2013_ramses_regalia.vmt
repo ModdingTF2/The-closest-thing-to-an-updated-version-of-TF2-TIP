@@ -1,0 +1,53 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/medic/hw2013_ramses_regalia/hw2013_ramses_regalia_color"
+	"$bumpmap"		"models/workshop/player/items/medic/hw2013_ramses_regalia/hw2013_ramses_regalia_normal"
+	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
+	"$phongexponenttexture"		"models/workshop/player/items/medic/hw2013_ramses_regalia/hw2013_ramses_regalia_phongexponent"
+	"$phong"		"1"
+	"$phongexponent"		"15.000000"
+	"$phongboost"		"32.000000"
+	"$phongfresnelranges"		"[.25 .5 1]"
+	"$basemapalphaphongmask"		"1"
+	"$phongalbedotint"		"1"
+	"$rimlight"		"1"
+	"$rimlightexponent"		"4"
+	"$rimlightboost"		".5"
+	"$rimmask"		"0"
+	"$bumpmapalphaphongmask"		"1"
+	"$cloakPassEnabled"		"1"
+	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"		"5"
+	"$detailblendfactor"		"0"
+	"$detailblendmode"		"6"
+	"$yellow"		"0"
+	">=DX90"
+	{
+		"$selfillum"		"0"
+	}
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+	}
+}

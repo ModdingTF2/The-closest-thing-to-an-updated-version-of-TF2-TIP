@@ -1,0 +1,43 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\demo\bombs"
+
+	"$basemapalphaphongmask" 1
+
+	"$yellow" "0"
+
+	"$phong" "1"
+	"$phongexponent" "7"
+	"$phongboost" "2.5"
+//	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 1 4]"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.03 .02 .02]"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}
+

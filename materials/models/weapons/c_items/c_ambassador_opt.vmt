@@ -1,0 +1,66 @@
+// ### This basic VMT was written based on the game/sdktools/python/site-packages/templateStrings.py script ###
+"VertexLitGeneric"
+{
+	$baseTexture "models/weapons/c_items/c_ambassador_opt.vtf"
+	$bumpmap "models\weapons\c_items/c_ambassador_opt_normal"
+	$halflambert 1
+	
+//	"$envmap" "models/player/shared/eye-reflection-cubemap-" 
+//	"$envmapcontrast" 1
+//	"$envmaptint" "[1.0 1.0 0.5]"
+	"$normalmapalphaenvmapmask" 1
+//	"$basealphaenvmapmask" 1 
+//	"$basemapalphaphongmask" 1
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\weapons\c_items/c_ambassador_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$phongwarptexture"  "models\weapons\c_items/c_ambassador_phongwarp"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" ".5"
+
+	"360?$color2" "[ 0.9 0.8 0.8 ]"
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+
+	"$sheenmap" 		"cubemaps\cubemap_sheen001"
+	"$sheenmapmask" 		"Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmaptint" 		"[ 1 1 1 ]"
+	"$sheenmapmaskframe" 	"0"
+	"$sheenindex" 		"0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

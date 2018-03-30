@@ -1,0 +1,46 @@
+"VertexLitGeneric"
+{
+	// intentionally points at the blue skin so the player is holding an enemy version
+	"$baseTexture" "models\weapons\c_items/c_skullbat_hats"
+	"$yellow" "0"
+
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "1.5"
+//	"$lightwarptexture" "models\weapons\c_items/c_ambassador_lightwarp"                     
+//	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"	
+	"$phongfresnelranges"	"[.25 2 1]"
+
+	"$basemapalphaphongmask" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$glowcolor" "1"
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

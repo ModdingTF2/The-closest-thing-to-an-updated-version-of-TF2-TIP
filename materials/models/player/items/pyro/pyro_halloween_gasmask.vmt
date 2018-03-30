@@ -1,0 +1,50 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\player\items\pyro\pyro_halloween_gasmask"
+	"$bumpmap" "models\player\items\pyro\pyro_halloween_gasmask_normal"
+
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "7"	
+	"$lightwarptexture" "models/lightwarps/hand_lightwarp"
+	"$phongfresnelranges"	"[1 2 4]"
+	
+	"$blendtintbybasealpha" "1"
+	"$blendtintcoloroverbase" "0"
+	"$yellow" "0"
+	"$one" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

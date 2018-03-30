@@ -1,0 +1,72 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/sniper/winter_sniper_hood"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$bumpmap" "models/player/items/sniper/winter_sniper_hood_normal"
+	"$basemapalphaphongmask" "0"
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "2"	
+	"$phongfresnelranges"	"[.1 .5 3]"
+	"$halflambert" "1"
+	
+	"$yellow" "0"
+	"$rimlight" "1"						
+	"$rimlightexponent"	 "4"				
+	"$rimlightboost" ".5"
+
+	"360?$color2" "[ 0.5 0.5 0.5 ]"
+
+	"$blendtintbybasealpha" "1" 
+	"$blendtintcoloroverbase" "0"  
+
+	"$colortint_base" "{255 255 255}"
+	"$colortint_tmp" "[0 0 0]" 
+
+	//These variables will test colors in the engine
+	//"$color2" "{194 45 48}" 
+	//"$color2" "{255 255 255}" 
+	
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$yellow"
+			"resultVar" "$color2"
+		}
+		"ItemTintColor"
+  		{
+   			"resultVar" "$colortint_tmp"
+  		}
+  		"SelectFirstIfNonZero"
+  		{
+   			"srcVar1" "$colortint_tmp"
+   			"srcVar2" "$colortint_base"
+   			"resultVar" "$color2"
+  		}
+	}
+}

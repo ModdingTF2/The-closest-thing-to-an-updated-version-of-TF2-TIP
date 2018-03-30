@@ -1,0 +1,62 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/player/items/pyro/drg_pyro_fuelTank"
+	"$bumpmap" "models/player/items/pyro/drg_pyro_fuelTank_normal" 
+	//"$nocull" "1"
+	"$halflambert" "1"
+
+	"$basemapalphaphongmask" "0"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "10"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent"	 "4"	
+	"$rimlightboost" ".5"
+
+	"360?$color2" "[ 0.9 0.8 0.8 ]"
+
+ 	"$blendtintbybasealpha" "1" 
+	"$blendtintcoloroverbase" "1"  
+
+	"$colortint_base" "{149 49 47}"
+	"$colortint_tmp" "[0 0 0]" 
+
+	"$glowcolor" "1"
+
+	
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+	
+}
+}

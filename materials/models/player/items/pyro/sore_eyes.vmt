@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/player/items/pyro/sore_eyes"
+	"$translucent" 1
+
+	"$phong" "1"
+	"$phongexponent" "65"
+	"$phongfresnelranges" "[1 2 4]"
+	"$lightwarptexture" "models\lightwarps\jarate_lightwarp"
+	"$phongboost" "6"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".5"
+}

@@ -1,0 +1,64 @@
+"VertexLitGeneric"
+{
+	"$basetexture"		"models/workshop/player/items/soldier/robo_soldier_tyrantium/robo_soldier_tyrantium_color"
+	"$bumpmap"		"models/workshop/player/items/soldier/robo_soldier_tyrantium/robo_soldier_tyrantium_normal"
+	"$lightwarptexture"		"models/lightwarps/robot_lightwarp"
+	"$phong"		"1"
+	"$phongexponent"		"2.500000"
+	"$phongboost"		"3.000000"
+	"$phongfresnelranges"		"[.25 .5 1]"
+	"$rimlight"		"1"
+	"$rimlightexponent"		"4"
+	"$rimlightboost"		".5"
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"1.000000"
+	"$colortint_base"		"{ 184 56 59 }"
+	"$color2"		"{ 184 56 59 }"
+	"$colortint_tmp"		"[0 0 0]"
+	"$bumpmapalphaphongmask"		"1"
+	"$cloakPassEnabled"		"1"
+	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"		"5"
+	"$detailblendfactor"		"0"
+	"$detailblendmode"		"6"
+	"$yellow"		"0"
+	">=DX90"
+	{
+		"$selfillum"		"0"
+	}
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
+	}
+}
