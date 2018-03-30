@@ -8,7 +8,7 @@
 	"$phongfresnelranges"		"[.25 .5 1]"
 	"$rimlight"		"1"
 	"$rimlightexponent"		"5.000000"
-	"$rimlightboost"		".5"
+	"$rimlightboost"		"3.000000"
 	"$bumpmapalphaphongmask"		"1"
 	"$cloakPassEnabled"		"1"
 	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
@@ -44,6 +44,13 @@
 		{
 			"srcVar1"		"$yellow"
 			"resultVar"		"$color2"
+		}
+		"Sine"
+		{
+			"resultVar"		"$selfillumtint"
+			"sinemin"		0.1
+			"sinemax"		3
+			"sineperiod"	3
 		}
 	}
 }
