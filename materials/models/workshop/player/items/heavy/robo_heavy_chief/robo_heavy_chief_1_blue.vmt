@@ -1,0 +1,102 @@
+"UnlitTwoTexture"
+{
+	"$basetexture"					"models/workshop/player/items/heavy/robo_heavy_chief/robo_heavy_chief_1_color"
+	"$texture2"						"models/workshop/player/items/heavy/robo_heavy_chief/robo_heavy_chief_1_color2"
+	"$lightwarptexture"				"models/player/pyro/pyro_lightwarp"
+	"$phong"						"1"
+	"$phongexponent"				"10000.000000"
+	"$phongboost"					"0.000000"
+	"$phongfresnelranges"			"[.25 .5 1]"
+	"$rimlight"						"1"
+	"$rimlightexponent"				"10000.000000"
+	"$rimlightboost"				"0.000000"
+	"$halflambert"					"1"
+	"$blendtintbybasealpha"			"0"
+	"$blendtintcoloroverbase"		"0.000000"
+	"$colortint_base"				"{ 5 158 251 }"
+	"$color2"						"{ 5 158 251 }"
+	"$colortint_tmp"				"[0 0 0]"
+	"$bumpmapalphaphongmask"		"1"
+	"$additive"						"1"
+	"$cloakPassEnabled"				"1"
+	"$detail"						"models/effects/pyro/pilotlight"
+	"$detailscale"					"5"
+	"$detailblendfactor"			"0"
+	"$detailblendmode"				"6"
+	"$yellow"						"0"
+
+	"$temp" "[0 0]"
+	"$pilot" 0.0
+	"$pilot2" 0.0
+	
+	">=DX90"
+	{
+		"$selfillum"				"1"
+	}
+	
+	"$selfillumtint"				"[0.588235 0.588235 0.588235]"
+	"proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
+		"Sine"
+		{
+			"sineperiod" 	".1"
+			"sinemin" 		-0.02
+			"sinemax" 		0.02
+			"resultVar" 	"$pilot"
+		}
+		"Sine"
+		{
+			"sineperiod" "7"
+			"sinemin" 0.005
+			"sinemax" -0.005
+			"resultVar" "$pilot2"
+		}
+		"Equals"
+		{
+			"srcVar1" 		"$pilot2"
+			"resultVar"		"$temp[0]"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$pilot"
+			"resultVar"		"$temp[1]"
+		} 
+		"TextureTransform"
+		{
+			"translateVar" 	"$temp"
+			"resultVar"		 "$basetexturetransform"
+		}	 
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$texture2transform"
+			"texturescrollrate" 	12
+			"texturescrollangle"	90
+		}
+	}
+}
