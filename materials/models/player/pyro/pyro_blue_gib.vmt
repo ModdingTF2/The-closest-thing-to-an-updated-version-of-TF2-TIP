@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models/player/pyro/pyro_blue_gib"
 	"$surfaceprop"	"flesh"
-	"$bumpmap" "models\player\pyro\pyro_normal"
+	"$bumpmap" "models/player/pyro/pyro_gib_normal"
 
 	"$phong" "1"
 	"$phongexponent" "15"
@@ -14,5 +14,5 @@
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 }

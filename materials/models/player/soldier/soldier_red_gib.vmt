@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\soldier\soldier_red_gib"
-	"$bumpmap" "models\player\soldier\soldier_normal"
+	"$basetexture" "models/player/soldier/soldier_red_gib"
+	"$bumpmap" "models/player/soldier/soldier_gib_normal"
 
 	"$phong" "1"
 	"$phongboost" "1"	
@@ -12,5 +12,5 @@
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 }

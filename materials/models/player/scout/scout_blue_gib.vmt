@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\scout\scout_blue_gib"
-	"$bumpmap" "models\player\scout\scout_normal"
+	"$basetexture" "models/player/scout/scout_blue_gib"
+	"$bumpmap" "models/player/scout/scout_gib_normal"
 
 	"$phong" "1"
 	"$phongexponent" "10"
@@ -13,5 +13,5 @@
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 }
