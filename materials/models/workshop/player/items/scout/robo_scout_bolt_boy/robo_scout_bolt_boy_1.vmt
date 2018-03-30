@@ -1,0 +1,56 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models/workshop/player/items/scout/robo_scout_bolt_boy/robo_scout_bolt_boy_1_color"
+	"$lightwarptexture"		"models/lightwarps/robot_lightwarp"
+	"$phong"				"1"
+	"$phongexponent"		"0.000000"
+	"$phongboost"			"0.000000"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$rimlight"				"1"
+	"$rimlightexponent"		"0.000000"
+	"$rimlightboost"		"0.000000"
+	"$bumpmapalphaphongmask"		"1"
+	"$additive"				"1"
+	"$translucent"			"1"
+	"$alphatest"			"0"
+	"$cloakPassEnabled"		"1"
+	"$detail"				"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"			"5"
+	"$detailblendfactor"	"0"
+	"$detailblendmode"		"6"
+	"$yellow"				"0"
+	
+	">=DX90"
+	{
+		"$selfillum"		"1"
+	}
+	
+	"$selfillumtint"		"[0.784314 0.784314 0.784314]"
+	
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+		"Sine"
+		{
+			"resultVar"		"$selfillumtint"
+			"sinemin"		.1
+			"sinemax"		1.50
+			"sineperiod"	1
+		}
+	}
+}
