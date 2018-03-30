@@ -40,14 +40,14 @@
 
 	"$phong" "1"
 	"$phongexponent"  "35"
-	"$phongboost" "1"	
+	"$phongboost" ".1"	
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[11 1 8]"
 	
 	// Rim lighting parameters
 	"$rimlight" "1"		
 	"$rimlightexponent" "11"
-	"$rimlightboost" "5"	
+	"$rimlightboost" ".5"	
 	
 	"Proxies"
 	{

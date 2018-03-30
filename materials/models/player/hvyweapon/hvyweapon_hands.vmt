@@ -1,28 +1,19 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/player/hvyweapon/hvyweapon_hands"
-	"$bumpmap" "models\player\hvyweapon\hvyweapon_hands_phongmask"
+	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
-	"$phongexponent" "5"
-	"$phongboost" "1"	
+	"$phongexponent" "15"
+	"$phongboost" ".8"	
 	"$lightwarptexture" "models/lightwarps/hand_lightwarp"
-	"$phongfresnelranges"	"[.5 3 5]"
-	"$halflambert" "1"
-	
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$halflambert" "0"
+
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
-	"$rimlightexponent" "8"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".8"										// Boost for ambient cube component of rim lighting
-
-	// Cloaking
-	"$cloakPassEnabled" "1"
-	"Proxies"
-	{
-		"invis"
-		{
-		}
-	}
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
 }
 
 

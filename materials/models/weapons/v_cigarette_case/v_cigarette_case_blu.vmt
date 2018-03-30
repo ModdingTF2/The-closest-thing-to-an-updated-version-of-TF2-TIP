@@ -8,11 +8,11 @@
 	"$phongexponent" "25"
 	"$phongboost" "6"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
-	"$phongfresnelranges" "[0.25 0.5 1]"
+	"$phongfresnelranges" "[.25 2 1]"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
-	"$rimlightboost" "2"
+	"$rimlightboost" ".5"
 
 	"$glowcolor" "1"
 
