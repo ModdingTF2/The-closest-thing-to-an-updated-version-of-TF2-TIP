@@ -1,28 +1,28 @@
 "VertexLitGeneric"
 {
-	"$basetexture"		"models/workshop/player/items/heavy/robo_heavy_tungsten_toque/robo_heavy_tungsten_toque_1_color"
+	"$basetexture"			"models/workshop/player/items/heavy/robo_heavy_tungsten_toque/robo_heavy_tungsten_toque_1_color"
 	"$lightwarptexture"		"models/weapons/c_items/c_ambassador_lightwarp"
-	"$phong"		"1"
+	"$phong"				"1"
 	"$phongexponent"		"50.000000"
-	"$phongboost"		"2.000000"
-	"$phongfresnelranges"		"[.25 .5 1]"
-	"$rimlight"		"1"
+	"$phongboost"			"2.000000"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$rimlight"				"1"
 	"$rimlightexponent"		"5.000000"
-	"$rimlightboost"		".5"
+	"$rimlightboost"		"2.000000"
 	"$bumpmapalphaphongmask"		"1"
-	"$additive"		"1"
-	"$translucent"		"1"
-	"$alphatest"		"0"
-	"$envmap"		"env_cubemap"
-	"$basealphaenvmapmask"		"0"
+	"$additive"				"1"
+	"$translucent"			"1"
+	"$alphatest"			"0"
+	"$envmap"				"env_cubemap"
+	"$basealphaenvmapmask"	"0"
 	"$normalmapalphaenvmapmask"		"0"
-	"$envmaptint"		"[0.392157 0.392157 0.392157]"
+	"$envmaptint"			"[0.392157 0.392157 0.392157]"
 	"$cloakPassEnabled"		"1"
-	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
-	"$detailscale"		"5"
-	"$detailblendfactor"		"0"
+	"$detail"				"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"			"5"
+	"$detailblendfactor"	"0"
 	"$detailblendmode"		"6"
-	"$yellow"		"0"
+	"$yellow"				"0"
 	">=DX90"
 	{
 		"$selfillum"		"1"
@@ -32,12 +32,6 @@
 	{
 		"weapon_invis"
 		{
-		}
-		"AnimatedTexture"
-		{
-			"animatedtexturevar"		"$detail"
-			"animatedtextureframenumvar"		"$detailframe"
-			"animatedtextureframerate"		"30"
 		}
 		"BurnLevel"
 		{
@@ -51,6 +45,13 @@
 		{
 			"srcVar1"		"$yellow"
 			"resultVar"		"$color2"
+		}
+		"Sine"
+		{
+			"resultVar" $selfillumtint
+			"sinemin" .1
+			"sinemax" 1.50
+			"sineperiod" 4
 		}
 	}
 }

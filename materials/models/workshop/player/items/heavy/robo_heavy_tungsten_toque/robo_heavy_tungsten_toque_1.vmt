@@ -1,37 +1,41 @@
 "VertexLitGeneric"
 {
-	"$basetexture"		"models/workshop/player/items/heavy/robo_heavy_tungsten_toque/robo_heavy_tungsten_toque_1_color"
+	"$basetexture"			"models/workshop/player/items/heavy/robo_heavy_tungsten_toque/robo_heavy_tungsten_toque_1_color"
 	"$lightwarptexture"		"models/weapons/c_items/c_ambassador_lightwarp"
-	"$envmap"		"env_cubemap"
-	"$envmaptint"		"[0.392157 0.392157 0.392157]"
-	"$phong"		"1"
+	"$envmap"				"env_cubemap"
+	"$envmaptint"			"[0.392157 0.392157 0.392157]"
+	"$phong"				"1"
 	"$phongexponent"		"50.000000"
-	"$phongboost"		"2.000000"
-	"$phongfresnelranges"		"[1 2 4]"
-	"$rimlight"		"1"
+	"$phongboost"			"2.000000"
+	"$phongfresnelranges"	"[1 2 4]"
+	"$rimlight"				"1"
 	"$rimlightexponent"		"5.000000"
-	"$rimlightboost"		".5"
-	"$glowcolor"		"1"
-	"$additive"		"1"
-	"$translucent"		"1"
-	"$selfillum"		"1"
+	"$rimlightboost"		"2.000000"
+	"$glowcolor"			"1"
+	"$additive"				"1"
+	"$translucent"			"1"
+	"$selfillum"			"1"
 	"$bumpmapalphaphongmask"		"1"
 	"$cloakPassEnabled"		"1"
-	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
-	"$detailscale"		"5"
-	"$detailblendfactor"		"0"
+	"$detail"				"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"			"5"
+	"$detailblendfactor"	"0"
 	"$detailblendmode"		"6"
-	"$yellow"		"0"
-	"proxies"
+	"$yellow"				"0"
+		
+	"$basealphaenvmapmask"			"0"
+	"$normalmapalphaenvmapmask"		"0"
+	
+	">=DX90"
+	{
+		"$selfillum"		"1"
+	}
+	
+	"$selfillumtint"		"[0.000000 0.000000 0.000000]"	
+	"Proxies"
 	{
 		"weapon_invis"
 		{
-		}
-		"AnimatedTexture"
-		{
-			"animatedtexturevar"		"$detail"
-			"animatedtextureframenumvar"		"$detailframe"
-			"animatedtextureframerate"		"30"
 		}
 		"BurnLevel"
 		{
@@ -46,12 +50,12 @@
 			"srcVar1"		"$yellow"
 			"resultVar"		"$color2"
 		}
+		"Sine"
+		{
+			"resultVar" $selfillumtint
+			"sinemin" .1
+			"sinemax" 1.50
+			"sineperiod" 4
+		}
 	}
-	"$basealphaenvmapmask"		"0"
-	"$normalmapalphaenvmapmask"		"0"
-	">=DX90"
-	{
-		"$selfillum"		"1"
-	}
-	"$selfillumtint"		"[0.000000 0.000000 0.000000]"
 }
