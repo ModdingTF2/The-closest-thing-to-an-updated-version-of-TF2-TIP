@@ -8,7 +8,7 @@
 	"$phongfresnelranges"		"[.25 .5 1]"
 	"$rimlight"		"1"
 	"$rimlightexponent"		"5.000000"
-	"$rimlightboost"		"3.000000"
+	"$rimlightboost"		".5"
 	"$bumpmapalphaphongmask"		"1"
 	"$cloakPassEnabled"		"1"
 	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
