@@ -8,7 +8,7 @@
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$rimlight"				"1"
 	"$rimlightexponent"		"5.000000"
-	"$rimlightboost"		"2.000000"
+	"$rimlightboost"		".5"
 	"$bumpmapalphaphongmask"		"1"
 	"$additive"				"1"
 	"$translucent"			"1"

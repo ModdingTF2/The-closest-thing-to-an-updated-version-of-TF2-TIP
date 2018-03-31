@@ -10,7 +10,7 @@
 	"$phongfresnelranges"	"[1 2 4]"
 	"$rimlight"				"1"
 	"$rimlightexponent"		"5.000000"
-	"$rimlightboost"		"2.000000"
+	"$rimlightboost"		".5"
 	"$glowcolor"			"1"
 	"$additive"				"1"
 	"$translucent"			"1"
