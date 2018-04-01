@@ -27,8 +27,8 @@
 
 
 	"$rimlight" "1"
-	"$rimlightexponent" "2"
-	"$rimlightboost" "2"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".5"
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
