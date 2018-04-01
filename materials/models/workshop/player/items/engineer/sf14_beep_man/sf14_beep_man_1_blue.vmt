@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-	"$basetexture"		"models/workshop/player/items/engineer/fall2013_beep_boy/fall2013_beep_boy_color"
-	"$bumpmap"		"models/workshop/player/items/engineer/fall2013_beep_boy/fall2013_beep_boy_normal"
-	"$lightwarptexture"		"models/buildables/sentry1/sentry1_lightwarp"
+	"$basetexture"		"models/workshop/player/items/engineer/sf14_beep_man/sf14_beep_man_1_blue_color"
+	"$bumpmap"		"models/workshop/player/items/engineer/sf14_beep_man/sf14_beep_man_1_normal"
+	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
 	"$phong"		"1"
 	"$phongexponent"		"8.000000"
 	"$phongboost"		"2.000000"
@@ -11,9 +11,9 @@
 	"$rimlightexponent"		"4"
 	"$rimlightboost"		"2"
 	"$blendtintbybasealpha"		"1"
-	"$blendtintcoloroverbase"		"1.000000"
-	"$colortint_base"		"{ 117 38 37 }"
-	"$color2"		"{ 117 38 37 }"
+	"$blendtintcoloroverbase"		"0"
+	"$colortint_base"		"{ 50 75 103 }"
+	"$color2"		"{ 50 75 103 }"
 	"$colortint_tmp"		"[0 0 0]"
 	"$bumpmapalphaphongmask"		"1"
 	"$cloakPassEnabled"		"1"
@@ -28,7 +28,7 @@
 	}
 	"proxies"
 	{
-		"weapon_invis"
+		"invis"
 		{
 		}
 		"AnimatedTexture"
@@ -41,15 +41,6 @@
 		{
 			"resultVar"		"$detailblendfactor"
 		}
-		"YellowLevel"
-		{
-			"resultVar"		"$yellow"
-		}
-		"Equals"
-		{
-			"srcVar1"		"$yellow"
-			"resultVar"		"$color2"
-		}
 		"ItemTintColor"
 		{
 			"resultVar"		"$colortint_tmp"
@@ -58,6 +49,16 @@
 		{
 			"srcVar1"		"$colortint_tmp"
 			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1"		"$color2"
+			"srcVar2"		"$yellow"
 			"resultVar"		"$color2"
 		}
 	}
