@@ -1,0 +1,21 @@
+"Spritecard"
+{
+	"$basetexture"	"Effects/mini_casing"
+	"$surfaceprop"	"default"
+	"$translucent"	1
+	"$vertexcolor" 	1
+	"$vertexalpha"	1
+	"$alphatest" "1"
+	"$depthblend" "0"
+    "$frame" "35"
+   "Proxies"
+   {
+      "AnimatedTexture"
+      {
+         "animatedtexturevar" "$basetexture"
+         "animatedtextureframenumvar" "$frame"
+         "animatedtextureframerate" 30
+      }
+   }
+	
+}
