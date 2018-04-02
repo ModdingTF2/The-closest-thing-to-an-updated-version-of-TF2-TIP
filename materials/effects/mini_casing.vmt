@@ -7,7 +7,7 @@
 	"$vertexalpha"	1
 	"$alphatest" "1"
 	"$depthblend" "0"
-    "$frame" "35"
+    "$frame" "37"
    "Proxies"
    {
       "AnimatedTexture"
