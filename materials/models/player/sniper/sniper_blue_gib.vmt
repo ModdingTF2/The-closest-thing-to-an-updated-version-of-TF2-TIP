@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models/player/sniper/sniper_blue_gib"
 	"$surfaceprop"	"flesh"
-	"$bumpmap" "models/player/sniper/sniper_gib_normal"
+	"$bumpmap" "models/player/sniper/sniper_normal"
 
 	"$phong" "1"
 	"$phongexponent" "15"

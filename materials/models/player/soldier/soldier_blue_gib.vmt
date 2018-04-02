@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/player/soldier/soldier_blue_gib"
-	"$bumpmap" "models/player/soldier/soldier_gib_normal"
+	"$bumpmap" "models/player/soldier/soldier_normal"
 
 	"$phong" "1"
 	"$phongboost" "1"	

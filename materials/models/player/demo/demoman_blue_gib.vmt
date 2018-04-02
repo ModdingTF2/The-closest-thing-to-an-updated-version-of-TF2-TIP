@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models/player/demo/demoman_blue_gib"
 	"$surfaceprop"	"flesh"
-	"$bumpmap" "models/player/demo/demoman_gib_normal"
+	"$bumpmap" "models/player/demo/demoman_normal"
 
 	"$phong" "1"
 	"$phongexponent" "15"
