@@ -38,6 +38,30 @@ Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% acur
 <td align="center"><a href="https://p3d.in/zobg0/spin" title="Spy Gibs"><img src="docs/spy_gibs.png" width="256" alt="Spy Gibs" title="Spy Gibs"><br>https://p3d.in/zobg0/spin</a></td>
 </tr></tbody></table>
 
+## Credits
+
+Thank you *Valve* for making **Team Fortress 2**!
+
+Thank you *Blaholtzen*, *NassimO*, *Hecates*, *Murphy*, *NeoDement*, *Agent Fedora*, *Chaofanatic*, *Shugo*, and *Sexy Robot* for the original **Texture Improvement Project**!
+
+Thank you *Filipianosol* for the **TF2TIP Cleanup**!
+
+Thank you *Hecates* for the **TIP HD Gibs**!
+
+Thank you *CheezKurds* for the **SFM Breadmonster Textures**!
+
+Thank you *Rlaro* for the **Animated Heavy Shells**!
+
+Thank you *Stachekip* for the **Beta Minigun Casings (Animated)**!
+
+Thank you *FiveEyes* and *Metabolic* for the original **Starboard Crusader** model!
+
+Thank you *Hawkshadow741* for the **2013 Festive Fixes**, and **A&B Beep Boy and Beep Man**!
+
+Thank you *DioJoestar* for the **Realistic Bunsen Brave**, **Realistic Bootleg Base Metal Billycock**, **Realistic HDMI Patch**, **Slow Pulse Effect - Tungsten Toque**, **Slow Pulse Effect - Filamental**, **Slow Pulse Bolt Boy**, and **Slow Pulse - Googol Glass Eyes**!
+
+Thank you *Mudley* for the **Shotgun Shells Texture Fix**, **Red Shells for BLU Slo-Poke**, **BLUEprints for RED Engineer**, **Lucky Shot Color Fix**, **Sentry Rockets Texture Fix**, and **Blue Pants for ScoutBot**!
+
 ## Why?
 
 <p align="center">Because this is the current state of the original project:</p>
