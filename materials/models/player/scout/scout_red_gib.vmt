@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/player/scout/scout_red_gib"
-	"$bumpmap" "models/player/scout/scout_gib_normal"
+	"$bumpmap" "models/player/scout/scout_normal"
 
 	"$phong" "1"
 	"$phongexponent" "10"
