@@ -9,7 +9,7 @@
 	"$phongfresnelranges"		"[.25 .5 1]"
 	"$rimlight"		"1"
 	"$rimlightexponent"		"4"
-	"$rimlightboost"		"2"
+	"$rimlightboost"		".5"
 	"$blendtintbybasealpha"		"1"
 	"$blendtintcoloroverbase"		"0"
 	"$colortint_base"		"{ 242 84 92 }"
