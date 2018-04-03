@@ -14,7 +14,7 @@
 	"$blendtintbybasealpha" "1" 
 	"$blendtintcoloroverbase" "0.5"   // between 0-1 determines how much blended by tinting vs. replacing the color
 
-	"$colortint_base" "{195 189 167}"  // put the RGB value of whats being colored when no paint is present, if $blendtintcoloroverbase is 0 then put [1 1 1] here.
+	"$colortint_base" "{215 81 79}"  // put the RGB value of whats being colored when no paint is present, if $blendtintcoloroverbase is 0 then put [1 1 1] here.
 	"$colortint_tmp" "[0 0 0]"
 
 
@@ -31,7 +31,7 @@
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"	
+	"$rimlightboost" "2"	
 	// Cloaking
 	"$cloakPassEnabled" "1"
 	"Proxies"
