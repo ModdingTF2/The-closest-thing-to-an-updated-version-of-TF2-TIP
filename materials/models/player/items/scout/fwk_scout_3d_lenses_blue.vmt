@@ -25,12 +25,12 @@
  	"$blendtintbybasealpha" "1" 
 	"$blendtintcoloroverbase" "1"  
 
-	"$colortint_base" "{249 103 189}"
+	"$colortint_base" "{171 31 27}"
 	"$colortint_tmp" "[0 0 0]" 
 
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
