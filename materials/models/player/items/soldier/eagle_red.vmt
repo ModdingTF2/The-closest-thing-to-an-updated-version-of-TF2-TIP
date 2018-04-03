@@ -31,7 +31,7 @@
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" "2"	
+	"$rimlightboost" ".5"	
 	// Cloaking
 	"$cloakPassEnabled" "1"
 	"Proxies"
