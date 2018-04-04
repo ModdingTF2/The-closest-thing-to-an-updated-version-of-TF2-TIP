@@ -12,7 +12,7 @@
 	"$blendtintcoloroverbase"		"0"
 	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" "2"
+	"$rimlightboost" ".5"
 	"$colortint_base"		"{ 119 115 115 }"
 	"$color2"		"{ 119 115 115 }"
 	"$colortint_tmp"		"[0 0 0]"
