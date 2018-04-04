@@ -15,7 +15,7 @@
 	
 	$rimLight 1
 	$rimLightExponent 4
-	$rimLightBoost 2
+	$rimLightBoost 0.5
 	
  	"$blendtintbybasealpha" "1" 
  	"$blendtintcoloroverbase" "1"
