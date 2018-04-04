@@ -7,7 +7,6 @@
 	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "5"
 	"$detailblendfactor" .01
-	"$detailblendmode" 6
 
 	$lightWarpTexture models\player\pyro\pyro_lightwarp
 	
@@ -16,12 +15,11 @@
 	
 	$rimLight 1
 	$rimLightExponent 4
-	$rimLightBoost 0.5
+	$rimLightBoost 2
 	
  	"$blendtintbybasealpha" "1" 
  	"$blendtintcoloroverbase" "1"
 	
-                $color2             " {52 31 35}"
 	$colorTintBase "{52 31 35}"
 	$colorTintTemp 0
 
