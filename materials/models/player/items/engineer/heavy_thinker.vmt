@@ -8,23 +8,15 @@
 	"$detailblendmode" 6
 	"$yellow" "0"
 
-	"$phong" "1"
-	"$phongexponent" "5"
-	"$phongboost" ".25"
-	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"	
-	"$phongfresnelranges"	"[.25 .5 1]"
-	"$basemapalphaphongmask" "1"
-	">=DX90"
-	{
-		"$selfillum" 1	
-	}
-
-
-	// Rim lighting parameters
-	"$rimlight" "1"												// To enable rim lighting (requires phong)
-	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
-
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"0"
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "2"
+	"$colortint_base"		"{ 119 115 115 }"
+	"$color2"		"{ 119 115 115 }"
+	"$colortint_tmp"		"[0 0 0]"
+	
 	// Cloaking
 	"$cloakPassEnabled" "1"
 
@@ -52,6 +44,15 @@
 			"srcVar1"  "$yellow"
 			"resultVar" "$color2"
 		}
-
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
 	}
 }
