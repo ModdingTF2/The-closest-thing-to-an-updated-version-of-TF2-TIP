@@ -25,7 +25,7 @@
 
 	"$rimlight" "1"
 	"$rimlightexponent" "60"
-	"$rimlightboost" ".5"
+	"$rimlightboost" "2"
 	
 	// Cloaking
 	"$cloakPassEnabled" "1"
@@ -56,13 +56,13 @@
 		}
 		"ItemTintColor"
 		{
- 			"resultVar" "$colortint_tmp"
+			"resultVar"		"$colortint_tmp"
 		}
-			"SelectFirstIfNonZero"
+		"SelectFirstIfNonZero"
 		{
- 			"srcVar1" "$colortint_tmp"
- 			"srcVar2" "$colortint_base"
- 			"resultVar" "$color2"
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
 		}
 	}
 }
