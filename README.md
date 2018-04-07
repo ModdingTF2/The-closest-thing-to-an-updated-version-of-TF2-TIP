@@ -44,23 +44,29 @@ Thank you *Valve* for making **Team Fortress 2**!
 
 Thank you *Blaholtzen*, *NassimO*, *Hecates*, *Murphy*, *NeoDement*, *Agent Fedora*, *Chaofanatic*, *Shugo*, and *Sexy Robot* for the original **Texture Improvement Project**!
 
+Thank you *CheezKurds* for the **SFM Breadmonster Textures**!
+
+Thank you *DioJoestar* for the **Realistic Bunsen Brave**, **Realistic Bootleg Base Metal Billycock**, **Realistic HDMI Patch**, **Slow Pulse Effect - Tungsten Toque**, **Slow Pulse Effect - Filamental**, **Slow Pulse Bolt Boy**, and **Slow Pulse - Googol Glass Eyes**!
+
 Thank you *Filipianosol* for the **TF2TIP Cleanup**!
+
+Thank you *FiveEyes* and *Metabolic* for the original **Starboard Crusader** model!
+
+Thank you *FiveEyes* for the **Buff Banner Bugle Phong Fix**!
+
+Thank you *Gabrielwoj* for the **Fixed Vaccinator BLU Team Visor**, **Fixed Chieftain's Challenge Paint**, **Fixed Stereoscopic Shades**, **Requested Alternative Paintable Area/Fix #1**, **Valley Forge - Red Team Fix**, **Slick Cut Improvements**, **Medical Mystery - Pack of Fixes**, **Das Fantzipantzen - Alternative Paint Area**, **Black Watch Improvements**, **Smock Surgeon - BLU Team Fix** , **Paintable Pencil Pusher**, **Law Fix**, **The Dictator Fix**, **Alternate Color Schemes #1**, **Alternate Color Schemes #2**, **Team Colored Fire Axe**, **Team Colored Deep Fried Desire**, and **Cream Spirit Maul**!
+
+Thank you *Hawkshadow741* for the **2013 Festive Fixes** and **A&B Beep Boy and Beep Man**!
 
 Thank you *Hecates* for the **TIP HD Gibs**!
 
-Thank you *CheezKurds* for the **SFM Breadmonster Textures**!
+Thank you *Hellview24* for the **Cut Throat Concierge Texture Fix** and **Cockswain's Mutton Chops Paint Improvements**!
+
+Thank you *Mudley* for the **Shotgun Shells Texture Fix**, **Red Shells for BLU Slo-Poke**, **BLUEprints for RED Engineer**, **Lucky Shot Color Fix**, **Sentry Rockets Texture Fix**, and **Blue Pants for ScoutBot**!
 
 Thank you *Rlaro* for the **Animated Heavy Shells**!
 
 Thank you *Stachekip* for the **Beta Minigun Casings (Animated)**!
-
-Thank you *FiveEyes* and *Metabolic* for the original **Starboard Crusader** model!
-
-Thank you *Hawkshadow741* for the **2013 Festive Fixes**, and **A&B Beep Boy and Beep Man**!
-
-Thank you *DioJoestar* for the **Realistic Bunsen Brave**, **Realistic Bootleg Base Metal Billycock**, **Realistic HDMI Patch**, **Slow Pulse Effect - Tungsten Toque**, **Slow Pulse Effect - Filamental**, **Slow Pulse Bolt Boy**, and **Slow Pulse - Googol Glass Eyes**!
-
-Thank you *Mudley* for the **Shotgun Shells Texture Fix**, **Red Shells for BLU Slo-Poke**, **BLUEprints for RED Engineer**, **Lucky Shot Color Fix**, **Sentry Rockets Texture Fix**, and **Blue Pants for ScoutBot**!
 
 ## Why?
 
