@@ -1,0 +1,21 @@
+"LightMappedGeneric"
+{
+	"$basetexture"	"Metal/metalchrome002"
+	"$bumpmap" 	"water/scrolling_water01_normal"
+	"$envmap" "env_cubemap"
+	//"$basealphaenvmapmask" 1
+	"$surfaceprop" "metal"
+	"$envmaptint" "[ .25 .25 .25]"
+	"%keywords" "tf"
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" -0.04
+			"texturescrollangle" 45
+		}
+	}
+
+}

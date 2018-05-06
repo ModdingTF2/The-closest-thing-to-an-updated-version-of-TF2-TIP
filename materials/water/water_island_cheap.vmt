@@ -1,0 +1,35 @@
+"Water"
+{
+	"%keywords" "tf"
+	
+	"%tooltexture" "dev/tfwater_normal"
+	"%compilewater" 1
+	"%compileKeepLight" 1
+	"$abovewater" 1
+	"$translucent" 1
+
+	"$envmap" "env_cubemap"
+
+	"$normalmap" "water/scrolling_water01_normal"
+
+	"$surfaceprop" "water"
+	"$bottommaterial" "water/water_well_beneath.vmt"
+	"$bumpframe" "0"
+
+	"$fogenable" 1
+	"$fogcolor" "{148 197 195}"
+	"$fogstart" "1"
+	"$fogend" "400"
+	
+	"$normalmapalphaenvmapmask" "1"
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" 0.1
+			"texturescrollangle" 315.00
+		}
+	}
+}

@@ -1,0 +1,71 @@
+"Water"
+{
+
+	<dx90
+	{
+		 	"$fallbackmaterial" "water/water_2fort_dx80"
+	}
+
+	"%keywords" "tf"
+	//	$forcecheap 1
+	
+	"%tooltexture" "dev/tfwater_normal"
+	"%compilewater" 1
+	"$abovewater" 1
+//	"$nofresnel" "1"
+
+	$underwateroverlay "effects/water_warp"
+	"$envmap" "env_cubemap"	
+	"$refracttexture" "_rt_WaterRefraction"
+	"$refractamount" ".12"
+//	"$refracttint" "{57 54 44}"
+	"$refractblur" "1"
+
+
+
+	"$scale" "[1 1]"
+
+//	"$bumpmap" "water/tfwater001_dudv"
+	"$normalmap" "water/tfwater001_normal"
+
+	"$surfaceprop" "water"
+	"$bottommaterial" "water/water_2fort_beneath.vmt"
+	"$bumpframe" "0"
+
+	"$fogenable" 1
+	"$fogcolor" "{57 54 44}"
+	"$fogstart" "0"
+	"$fogend" "100"
+
+	 "$temp" "[0 0]"
+	 "$curr" 0.0
+	 "$curr2" 0.0
+
+	"Water_DX60"
+	{
+		"$fallbackmaterial" "nature/water_dx70"
+	}
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$normalmap"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 30.00
+		}
+
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" .6
+			"texturescrollangle" 170.00
+		}
+		"WaterLOD"
+		{
+			// fixme!  This has to be here, or material loading barfs.
+			"dummy" 0
+		}
+	}
+}
