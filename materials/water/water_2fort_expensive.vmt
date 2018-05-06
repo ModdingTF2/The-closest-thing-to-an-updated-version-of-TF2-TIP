@@ -1,22 +1,24 @@
 "Water"
 {
 	"%keywords" "tf"
-	//	$forcecheap 1
-	
+//	$forcecheap 1
+
 	"%tooltexture" "dev/tfwater_normal"
 	"%compilewater" 1
 	"$abovewater" 1
-	//"$nofresnel" "1"
+//	"$nofresnel" "1"
 
 	"$envmap" "env_cubemap"	
 	"$refracttexture" "_rt_WaterRefraction"
+
 	"$refractamount" ".32"
-	//"$refracttint" "{191 179 155}"
+
+//	"$refracttint" "{191 179 155}"
 	"$refractblur" "1"
 
 	"$reflecttexture" "_rt_WaterReflection"
 	"$reflectamount" ".25"
-	//"$reflecttint" "{230 240 255}"
+//	"$reflecttint" "{230 240 255}"
 //	"$reflectsaturation" "[0 0 1]"
 
 	"$scale" "[1 1]"
@@ -33,14 +35,9 @@
 	"$fogstart" "1"
 	"$fogend" "400"
 
-	 "$temp" "[0 0]"
-	 "$curr" 0.0
-	 "$curr2" 0.0
-
-	"Water_DX60"
-	{
-		"$fallbackmaterial" "nature/water_dx70"
-	}
+	"$temp" "[0 0]"
+	"$curr" 0.0
+	"$curr2" 0.0
 
 	"Proxies"
 	{

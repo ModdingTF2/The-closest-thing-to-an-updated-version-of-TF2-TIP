@@ -1,27 +1,25 @@
 "Water"
 {
-
-	<dx90
-	{
-		 	"$fallbackmaterial" "water/water_2fort_dx80"
-	}
-
 	"%keywords" "tf"
-	//	$forcecheap 1
-	
+//	$forcecheap 1
+
 	"%tooltexture" "dev/tfwater_normal"
 	"%compilewater" 1
 	"$abovewater" 1
 //	"$nofresnel" "1"
 
-	$underwateroverlay "effects/water_warp"
 	"$envmap" "env_cubemap"	
 	"$refracttexture" "_rt_WaterRefraction"
+
 	"$refractamount" ".12"
+
 //	"$refracttint" "{57 54 44}"
 	"$refractblur" "1"
 
-
+	"$reflecttexture" "_rt_WaterReflection"
+	"$reflectamount" ".1"
+//	"$reflecttint" "{230 240 255}"
+//	"$reflectsaturation" "[0 0 1]"
 
 	"$scale" "[1 1]"
 
@@ -37,14 +35,9 @@
 	"$fogstart" "0"
 	"$fogend" "100"
 
-	 "$temp" "[0 0]"
-	 "$curr" 0.0
-	 "$curr2" 0.0
-
-	"Water_DX60"
-	{
-		"$fallbackmaterial" "nature/water_dx70"
-	}
+	"$temp" "[0 0]"
+	"$curr" 0.0
+	"$curr2" 0.0
 
 	"Proxies"
 	{
@@ -55,13 +48,45 @@
 			"animatedtextureframerate" 30.00
 		}
 
-
-		"TextureScroll"
+		"Sine"
 		{
-			"texturescrollvar" "$bumptransform"
-			"texturescrollrate" .6
-			"texturescrollangle" 170.00
+			"sineperiod" "24"
+			"sinemin" -0.5
+			"sinemax" 0.5
+			"resultVar" "$curr"
 		}
+		"Sine"
+		{
+			"sineperiod" "16"
+			"sinemin" 0.5
+			"sinemax" -0.5
+			"resultVar" "$curr2"
+		}
+
+		"Equals"
+		{
+			"srcVar1" "$curr2"
+			"resultVar" "$temp[0]"
+		}
+		"Equals"
+		{
+			"srcVar1" "$curr"
+			"resultVar" "$temp[1]"
+		}
+
+ 
+		"TextureTransform"
+		{
+			"translateVar" "$temp"
+			"resultVar" "$bumptransform"
+		}  
+
+//		"TextureScroll"
+//		{
+//			"texturescrollvar" "$bumptransform"
+//			"texturescrollrate" .1
+//			"texturescrollangle" 45.00
+//		}
 		"WaterLOD"
 		{
 			// fixme!  This has to be here, or material loading barfs.
