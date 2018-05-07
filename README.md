@@ -22,7 +22,7 @@ Uses the [Cleanup](https://facepunch.com/showthread.php?t=1251249&p=43119383&vie
 
 ### • Delicous gibs:
 
-Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% acurate to ingame.)
+Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% acurate to in-game.)
 
 <table><tbody><tr>
 <td align="center"><a href="https://p3d.in/TWqOT/spin" title="Heavy Gibs"><img src="docs/heavy_gibs.png" width="256" alt="Heavy Gibs" title="Heavy Gibs"><br>https://p3d.in/TWqOT/spin</a></td>
@@ -70,5 +70,5 @@ Thank you *Stachekip* for the **Beta Minigun Casings (Animated)**!
 
 ## Why?
 
-<p align="center">Because this is the current state of the original project:</p>
+<p align="center">Because this is the state of the original project:</p>
 <p align="center"><a href="http://steamcommunity.com/groups/tf2tip#announcements/detail/1585530588971964312" title="Pre-release 4 coming soon"><img src="docs/soon.png" alt="Pre-release 4 coming soon" title="Pre-release 4 coming soon"></a></p>
