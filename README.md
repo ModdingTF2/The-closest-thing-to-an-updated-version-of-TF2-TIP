@@ -22,7 +22,7 @@ Uses the [Cleanup](https://facepunch.com/showthread.php?t=1251249&p=43119383&vie
 
 ### • Delicous gibs:
 
-Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% acurate to in-game.)
+Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% accurate to in-game.)
 
 <table><tbody><tr>
 <td align="center"><a href="https://p3d.in/TWqOT/spin" title="Heavy Gibs"><img src="docs/heavy_gibs.png" width="256" alt="Heavy Gibs" title="Heavy Gibs"><br>https://p3d.in/TWqOT/spin</a></td>
@@ -42,29 +42,29 @@ Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% acur
 
 Thank you *Valve* for making **Team Fortress 2**!
 
-Thank you *Blaholtzen*, *NassimO*, *Hecates*, *Murphy*, *NeoDement*, *Agent Fedora*, *Chaofanatic*, *Shugo*, and *Sexy Robot* for the original **Texture Improvement Project**!
+Thank you *Blaholtzen*, *NassimO*, *Hecates*, *Murphy*, *NeoDement*, *Agent Fedora*, *Chaofanatic*, *Shugo*, and *Sexy Robot* for the original [**Texture Improvement Project**](https://facepunch.com/showthread.php?t=1251249)!
 
-Thank you *CheezKurds* for the **SFM Breadmonster Textures**!
+Thank you *CheezKurds* for the [**SFM Breadmonster Textures**](https://gamebanana.com/skins/134996)!
 
-Thank you *DioJoestar* for the **Realistic Bunsen Brave**, **Realistic Bootleg Base Metal Billycock**, **Realistic HDMI Patch**, **Slow Pulse Effect - Tungsten Toque**, **Slow Pulse Effect - Filamental**, **Slow Pulse Bolt Boy**, and **Slow Pulse - Googol Glass Eyes**!
+Thank you *DioJoestar* for the [**Realistic Bunsen Brave**](https://gamebanana.com/skins/126376), [**Realistic Bootleg Base Metal Billycock**](https://gamebanana.com/skins/126391), [**Realistic HDMI Patch**](https://gamebanana.com/skins/126394), [**Slow Pulse Effect - Tungsten Toque**](https://gamebanana.com/skins/126397), [**Slow Pulse Effect - Filamental**](https://gamebanana.com/skins/126412), [**Slow Pulse Bolt Boy**](https://gamebanana.com/skins/126418), and [**Slow Pulse - Googol Glass Eyes**](https://gamebanana.com/skins/126419)!
 
-Thank you *Filipianosol* for the **TF2TIP Cleanup**!
+Thank you *Filipianosol* for the [**TF2TIP Cleanup**](https://facepunch.com/showthread.php?t=1251249&p=43119383&viewfull=1#post43119383)!
 
 Thank you *FiveEyes* and *Metabolic* for the original **Starboard Crusader** model!
 
-Thank you *Gabrielwoj* for the **Fixed Vaccinator BLU Team Visor**, **Fixed Chieftain's Challenge Paint**, **Fixed Stereoscopic Shades**, **Requested Alternative Paintable Area/Fix #1**, **Valley Forge - Red Team Fix**, **Slick Cut Improvements**, **Medical Mystery - Pack of Fixes**, **Das Fantzipantzen - Alternative Paint Area**, **Black Watch Improvements**, **Smock Surgeon - BLU Team Fix** , **Paintable Pencil Pusher**, **Law Fix**, **The Dictator Fix**, **Alternate Color Schemes #1**, **Alternate Color Schemes #2**, **Team Colored Fire Axe**, **Team Colored Deep Fried Desire**, and **Cream Spirit Maul**!
+Thank you *Gabrielwoj* for the [**Fixed Vaccinator BLU Team Visor**](https://gamebanana.com/skins/129031), [**Fixed Chieftain's Challenge Paint**](https://gamebanana.com/skins/129210), [**Fixed Stereoscopic Shades**](https://gamebanana.com/skins/129230), [**Requested Alternative Paintable Area/Fix #1**](https://gamebanana.com/skins/129310), [**Valley Forge - Red Team Fix**](https://gamebanana.com/skins/130538), [**Slick Cut Improvements**](https://gamebanana.com/skins/131139), [**Medical Mystery - Pack of Fixes**](https://gamebanana.com/skins/131176), [**Das Fantzipantzen - Alternative Paint Area**](https://gamebanana.com/skins/131244), [**Black Watch Improvements**](https://gamebanana.com/skins/131330), [**Smock Surgeon - BLU Team Fix**](https://gamebanana.com/skins/132189), [**Paintable Pencil Pusher**](https://gamebanana.com/skins/132281), [**Law Fix**](https://gamebanana.com/skins/136083), [**The Dictator Fix**](https://gamebanana.com/skins/136675), [**Alternate Color Schemes #1**](https://gamebanana.com/skins/138423), [**Alternate Color Schemes #2**](https://gamebanana.com/skins/138424), [**Team Colored Fire Axe**](https://gamebanana.com/skins/138677), [**Team Colored Deep Fried Desire**](https://gamebanana.com/skins/139041), and [**Cream Spirit Maul**](https://gamebanana.com/skins/141600)!
 
-Thank you *Hawkshadow741* for the **2013 Festive Fixes** and **A&B Beep Boy and Beep Man**!
+Thank you *Hawkshadow741* for the [**2013 Festive Fixes**](https://gamebanana.com/skins/131383) and [**A&B Beep Boy and Beep Man**](https://gamebanana.com/skins/129568)!
 
-Thank you *Hecates* for the **TIP HD Gibs**!
+Thank you *Hecates* for the [**TIP HD Gibs**](https://facepunch.com/showthread.php?t=1251249&p=45690599&viewfull=1#post45690599)!
 
-Thank you *Hellview24* for the **Cut Throat Concierge Texture Fix** and **Cockswain's Mutton Chops Paint Improvements**!
+Thank you *Hellview24* for the [**Cut Throat Concierge Texture Fix**](https://gamebanana.com/skins/126426) and [**Cockswain's Mutton Chops Paint Improvements**](https://gamebanana.com/skins/132672)!
 
-Thank you *Mudley* for the **Shotgun Shells Texture Fix**, **Red Shells for BLU Slo-Poke**, **BLUEprints for RED Engineer**, **Sentry Rockets Texture Fix**, and **Blue Pants for ScoutBot**!
+Thank you *Mudley* for the [**Shotgun Shells Texture Fix**](https://gamebanana.com/skins/127587), [**Red Shells for BLU Slo-Poke**](https://gamebanana.com/skins/135098), [**BLUEprints for RED Engineer**](https://gamebanana.com/skins/128011), [**Sentry Rockets Texture Fix**](https://gamebanana.com/skins/127318), and [**Blue Pants for ScoutBot**](https://gamebanana.com/skins/127464)!
 
-Thank you *Rlaro* for the **Animated Heavy Shells**!
+Thank you *Rlaro* for the [**Animated Heavy Shells**](https://gamebanana.com/skins/59298)!
 
-Thank you *Stachekip* for the **Beta Minigun Casings (Animated)**!
+Thank you *Stachekip* for the [**Beta Minigun Casings (Animated)**](https://gamebanana.com/skins/100232)!
 
 ## Why?
 
