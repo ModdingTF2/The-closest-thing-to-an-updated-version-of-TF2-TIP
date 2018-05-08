@@ -48,7 +48,7 @@ Thank you *CheezKurds* for the [**SFM Breadmonster Textures**](https://gamebanan
 
 Thank you *DioJoestar* for the [**Realistic Bunsen Brave**](https://gamebanana.com/skins/126376), [**Realistic Bootleg Base Metal Billycock**](https://gamebanana.com/skins/126391), [**Realistic HDMI Patch**](https://gamebanana.com/skins/126394), [**Slow Pulse Effect - Tungsten Toque**](https://gamebanana.com/skins/126397), [**Slow Pulse Effect - Filamental**](https://gamebanana.com/skins/126412), [**Slow Pulse Bolt Boy**](https://gamebanana.com/skins/126418), and [**Slow Pulse - Googol Glass Eyes**](https://gamebanana.com/skins/126419)!
 
-Thank you *Filipianosol* for the [**TF2TIP Cleanup**](https://facepunch.com/showthread.php?t=1251249&p=43119383&viewfull=1#post43119383)!
+Thank you *Filipianosol* for the [**TF2TIP Cleanup**](https://facepunch.com/showthread.php?t=1251249&p=43119383&viewfull=1#post43119383) and [**Mat_picmip -10 Revival**](https://facepunch.com/showthread.php?t=1251249&p=43181174&viewfull=1#post43181174)!
 
 Thank you *FiveEyes* and *Metabolic* for the original **Starboard Crusader** model!
 
