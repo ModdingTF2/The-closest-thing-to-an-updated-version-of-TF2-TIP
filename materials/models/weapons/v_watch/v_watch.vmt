@@ -16,7 +16,7 @@
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
-	"$rimlightboost" ".5"
+	"$rimlightboost" "2"
 
 	// Cloaking
 	"$cloakPassEnabled" "1"

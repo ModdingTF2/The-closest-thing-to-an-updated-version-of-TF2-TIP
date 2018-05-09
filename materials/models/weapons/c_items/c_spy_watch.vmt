@@ -1,22 +1,23 @@
+// ### This basic VMT was written based on the game/sdktools/python/site-packages/templateStrings.py script ###
 "VertexLitGeneric"
 {
-	$baseTexture "models/weapons/c_items/c_pocket_watch.vtf"
+	$baseTexture "models/weapons/c_items/c_spy_watch.vtf"
+	
+	"$basealphaenvmapmask" 1
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 1 1]"
 
-	"$phong" "1"
-	"$phongexponent" "100"
-	"$phongboost" "3"	
-	"$phongfresnelranges"	"[.25 .5 1]"
 	"$basemapalphaphongmask" "1"
+	"$invertphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "45"
+	"$phongboost" "25"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
 
-	"$lightwarptexture" "models\weapons\c_items/c_pocket_watch_lightwarp"
-	"$phongwarptexture"  "models\weapons\c_items/c_pocket_watch_phongwarp"
-
-	"$rimlight" "1"
-	"$rimlightexponent" "4"	
-	"$rimlightboost" "1"
-
-	"360?$color2" "[ 0.9 0.8 0.8 ]"
-
+//	"$rimlight" "1"
+//	"$rimlightexponent" "4"	
+//	"$rimlightboost" "0"
 
 	"$glowcolor" "1"
 
