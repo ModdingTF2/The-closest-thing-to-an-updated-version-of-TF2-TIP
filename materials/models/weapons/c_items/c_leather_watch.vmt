@@ -20,7 +20,7 @@
 	"$rimmask" "1"
 
 	// Cloaking
-	"$cloakPassEnabled" "1"
+	"$cloakPassEnabled" "0"
 	"$yellow" "0"
 	"$glowcolor" "1"
 
