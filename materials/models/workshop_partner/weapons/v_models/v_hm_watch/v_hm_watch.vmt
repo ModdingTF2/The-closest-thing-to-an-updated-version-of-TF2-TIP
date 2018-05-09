@@ -19,7 +19,7 @@
 	"$glowcolor" "1"
 
 	// Cloaking
-	"$cloakPassEnabled" "1"
+	"$cloakPassEnabled" "0"
 	"$sheenPassEnabled" "1"
 
 	"$sheenmap" 		"cubemaps/cubemap_sheen001"

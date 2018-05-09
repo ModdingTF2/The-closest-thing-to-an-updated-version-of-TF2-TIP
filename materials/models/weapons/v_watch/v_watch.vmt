@@ -19,7 +19,7 @@
 	"$rimlightboost" "2"
 
 	// Cloaking
-	"$cloakPassEnabled" "1"
+	"$cloakPassEnabled" "0"
 	"Proxies"
 	{
 		"invis"
