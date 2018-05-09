@@ -11,7 +11,7 @@
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
-	"$rimlightboost" ".5"
+	"$rimlightboost" "1"
 
 	"360?$color2" "[ 0.9 0.8 0.8 ]"
 
@@ -27,6 +27,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -51,6 +53,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

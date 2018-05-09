@@ -15,16 +15,49 @@
 //	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "4"
-	"$rimlightboost" ".5"
+	"$rimlightexponent" "3"
+	"$rimlightboost" ".2"
 	"$rimmask" "1"
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
+	"$yellow" "0"
+	"$glowcolor" "1"
+
 	"Proxies"
 	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
 		"invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
 		}
 	}
 }
