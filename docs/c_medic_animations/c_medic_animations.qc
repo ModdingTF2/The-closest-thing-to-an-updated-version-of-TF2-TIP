@@ -270,6 +270,7 @@ $sequence "sg_draw" {
 	"c_medic_animations_anims\sg_draw.smd"
 	activity "ACT_PRIMARY_VM_DRAW" 1
 	{ event 5004 1 "Weapon_SyringeGun.Draw" }
+	{ event 5004 10 "Weapon_FlareGun.Grab" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
