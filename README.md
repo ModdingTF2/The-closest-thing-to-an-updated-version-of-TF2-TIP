@@ -62,9 +62,13 @@ Thank you *Hecates* for the [**TIP HD Gibs**](https://facepunch.com/showthread.p
 
 Thank you *Hellview24* for the [**Cut Throat Concierge Texture Fix**](https://gamebanana.com/skins/126426) and [**Cockswain's Mutton Chops Paint Improvements**](https://gamebanana.com/skins/132672)!
 
+Thank you *Max Box* for the [**DR Open Click**](https://www.mediafire.com/file/kvzji1c6mya75ms/DR_Open_Click.vpk)!
+
 Thank you *Mudley* for the [**Shotgun Shells Texture Fix**](https://gamebanana.com/skins/127587), [**Red Shells for BLU Slo-Poke**](https://gamebanana.com/skins/135098), [**BLUEprints for RED Engineer**](https://gamebanana.com/skins/128011), [**Lucky Shot Color Fix**](https://gamebanana.com/skins/127642), [**Sentry Rockets Texture Fix**](https://gamebanana.com/skins/127318), and [**Blue Pants for ScoutBot**](https://gamebanana.com/skins/127464)!
 
-Thank you *NassimO* for the [**The World in HQ**](https://gamebanana.com/skins/89536)
+Thank you *NassimO* for [**The World in HQ**](https://gamebanana.com/skins/89536)!
+
+Thank you *Paysus* for the [**Spy First Person Animation Overhaul**](https://gamebanana.com/skins/140710)!
 
 Thank you *Rlaro* for the [**Animated Heavy Shells**](https://gamebanana.com/skins/59298)!
 
