@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\bots\demo\demo_buster"
+	"$basetexture" "models\bots\demo\demo_buster_red"
 	"$bumpmap" "models\bots\demo\demo_buster_normal"
 	"$selfillum" "1"
 	
