@@ -68,6 +68,8 @@ Thank you *Paysus* for the [**Spy First Person Animation Overhaul**](https://gam
 
 Thank you *Rlaro* for the [**Animated Heavy Shells**](https://gamebanana.com/skins/59298)!
 
+Thank you *sigsegv* for the [**Robot Animation Fixes**](https://gamebanana.com/skins/140866)!
+
 Thank you *Stachekip* for the [**Beta Minigun Casings (Animated)**](https://gamebanana.com/skins/100232)!
 
 ## Why?
