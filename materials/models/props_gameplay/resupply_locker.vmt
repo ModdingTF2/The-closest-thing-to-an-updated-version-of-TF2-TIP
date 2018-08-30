@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props_gameplay/resupply_locker"
+	"$bumpmap"     "models/player/shared/shared_normal"
+	"$phong" "1"
+	"$phongexponent" "50"
+	"$phongboost" ".5"	
+	"$phongfresnelranges"	"[.7 15 20]"
+}
+
