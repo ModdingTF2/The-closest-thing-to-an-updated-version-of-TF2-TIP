@@ -1,15 +1,16 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models\weapons\c_items/c_sandwich"
-	"$basemapalphaphongmask" 1
+	"$lightwarptexture" "models/lightwarps/softened_weapon_lightwarp"
 	
 	//phong properties
 	"$phong"	"1"
-	"$phongboost"	"1"
-	"$phongexponent"	"10"
+	"$phongboost"	".4"
+	"$phongexponent"	"40"
 	"$phongfresnelranges"	"[1 2 2.5]"
 	"$rimlight"	"1"
 	"$rimlightexponent"	"1"
+	"$basemapalphaphongmask" "1"
 
 
 	"$glowcolor" "1"
@@ -23,6 +24,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -47,6 +50,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

@@ -1,29 +1,33 @@
 "VertexlitGeneric"
 {
-	"$baseTexture" "models\weapons\v_wrench\v_wrench_sheet"
+	"$baseTexture" "models\weapons\c_models\c_wrench\c_wrench"
 	"$bumpmap" "models/effects/flat_normal" 
 	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "5"
 	"$detailblendfactor" .01
 	"$detailblendmode" 6
 	"$yellow" "0"
-
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phong" "1"
 	"$phongexponent" "8"
 	"$phongboost" "5"
 	"$phongfresnelranges"	"[.25 1 4]"
 	"$basemapalphaphongmask" "1"
 
-	"$envmap" "effects/goldcube"
+	//"$envmap" "effects/goldcube"
+	"$envmap" "cubemaps/cubemap_gold001"	//Switched to Australium weapon cubemap
 
-	"$envmaptint" "[1.5 1.2 .2]"
+	//"$envmaptint" "[1.5 1.2 .2]"
+	"$envmaptint" "[15.0 12.0 12.0]"	//Boost tint level since new cubemap results in darker shine.
 
 
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 
+	"$glowcolor"	"1"	//Required for crit/minicrit glows
+	
 	// Cloaking
 	"$cloakPassEnabled" "1"
 	"$sheenPassEnabled" "1"
@@ -45,6 +49,20 @@
 		"invis"
 		{
 		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"
@@ -59,11 +77,11 @@
 		{
 			"resultVar" "$yellow"
 		}
-		"Equals"
+		"Multiply"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-
 	}
 }

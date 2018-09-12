@@ -3,11 +3,11 @@
 	"$baseTexture" "models\weapons\c_items/c_claymore_gold"
 
 	"$phong" "1"
-	"$phongexponent" "110"
-	"$phongboost" "2"
+	"$phongexponent" "30"
+	"$phongboost" ".12"
 	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
 	"$phongfresnelranges"	"[.25 .5 4]"
-	"$basemapalphaphongmask" "1"
+	"$basemapalphaphongmask" "0"
 
 	// Begin GOLD look
 
@@ -18,7 +18,7 @@
 
 	"$rimlight" "1"						
 	"$rimlightexponent" "70"				
-	"$rimlightboost" ".5"
+	"$rimlightboost" ".25"
 
 	"$glowcolor" "1"
 
@@ -31,6 +31,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -55,6 +57,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

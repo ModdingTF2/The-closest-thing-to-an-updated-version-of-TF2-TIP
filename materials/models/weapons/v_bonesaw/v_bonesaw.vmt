@@ -2,19 +2,16 @@
 {
 	"$baseTexture" "models\weapons\v_bonesaw/v_bonesaw"
 
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.5 .5 .5]"
-
 	"$phong" "1"
-	"$phongexponent" "30"
-	"$phongboost" "10"	
+	"$phongexponent" "25"
+	"$phongboost" "2"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
-	"$phongfresnelranges" "[0.25 0.5 1]"
+	"$phongfresnelranges"	"[1.5 .5 3]"
 	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "4"	
-	"$rimlightboost" ".5"
+	"$rimlightexponent" "20"	
+	"$rimlightboost" ".25"
 
 	"$glowcolor" "1"
 
@@ -27,6 +24,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -51,6 +50,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

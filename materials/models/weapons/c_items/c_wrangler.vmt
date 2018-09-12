@@ -3,21 +3,15 @@
 	"$basetexture" "models/weapons/c_items/c_wrangler"
 	"$bumpmap"     "models/weapons/c_items/c_wrangler_phongmask"
 
-	"$normalmapalphaenvmapmask" 1
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.3 .3 .3]"
-
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "8"	
 	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 
-	"$rimlight" "1"
-	"$rimlightexponent" "10"	
-	"$rimlightboost" ".5"
-
-	"$ambientocclusion" "1"
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" "2"
 
 	"$glowcolor" "1"
 
@@ -30,6 +24,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -54,6 +50,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

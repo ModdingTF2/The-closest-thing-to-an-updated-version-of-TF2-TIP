@@ -1,60 +1,67 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/weapons/c_items/c_saxxy"
-//	"$bumpmap" "models/weapons/c_items/c_saxxy_normal"	
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-	"$detailscale" "5"
-	"$detailblendfactor" .01
-	"$detailblendmode" 6
+	"$bumpmap" "models/weapons/c_items/c_saxxy_normal"	
+	
 	"$yellow" "0"
-
 
 	"$envmap" "cubemaps/cubemap_gold001"
 	"$envmaptint" "[1 .95 .3]"
 	
-//	"$normalmapalphaenvmapmask" "1"
-	"$basemapalphaphongmask"	"1"
+	"$bumpmapalphaenvmapmask" "1"
+
+	"$basemapalphaphongmask"	"0"
 
 	"$phong" "1"
-	"$phongexponent" "60"
-	"$phongboost" "5"
+	"$phongexponent" "50"
+	"$phongboost" "2"
 	"$phongfresnelranges"	"[.2 1 4]"
 		
-	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	
-
-
 	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" ".5"
+	"$rimlightboost" "2"
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
+
+	"$glowcolor" "1"
+
 	"Proxies"
 	{
-		"invis"
-		{
-		}
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"
 			"animatedtextureframenumvar" "$detailframe"
 			"animatedtextureframerate" 30
 		}
-		"BurnLevel"
+		"invis"
 		{
-			"resultVar" "$detailblendfactor"
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
 		}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
 		}
-		"Equals"
+		"Multiply"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-
 	}
-
 }

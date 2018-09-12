@@ -12,13 +12,13 @@
 	"$phong" "1"
 	"$phongexponent" "5"
 	"$phongboost" "5"
-	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 1 4]"
 	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" ".5"
+	"$rimlightboost" ".65"
 	// Cloaking
 	"$cloakPassEnabled" "1"
 

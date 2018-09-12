@@ -1,29 +1,28 @@
 "VertexlitGeneric"
 {
-	"$baseTexture" "models/weapons/c_items/c_frontierjustice_xmas.psd"
+	"$baseTexture" "models/weapons/c_items/c_frontierjustice_xmas"
 	"$bumpmap" "models/effects/flat_normal" 
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-	"$detailscale" "5"
-	"$detailblendfactor" .01
-	"$detailblendmode" 6
+
 	"$yellow" "0"
+
+	"$glowcolor" "1"
 
 	"$phong" "1"
 	"$phongexponent" "8"
 	"$phongboost" "2"
-//	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"	
 	"$phongfresnelranges"	"[.25 1 4]"
 	"$basemapalphaphongmask" "1"
 
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.5 .5 .5]"
+	"$envmap" "effects/saxxy/saxxy_gold"
+	"$envmaptint" "[.1 .1 0]"
+
 	"$basealphaenvmapmask" 1 
-//	"$normalmapalphaenvmapmask" 1
 
 	// Rim lighting parameters
 	"$rimlight" "1"				// To enable rim lighting (requires phong)
-	"$rimlightexponent" "4"			// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"			// Boost for ambient cube component of rim lighting
+	"$rimlightexponent" "20"			// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".35"			// Boost for ambient cube component of rim lighting
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
@@ -46,26 +45,29 @@
 		"invis"
 		{
 		}
-		"AnimatedTexture"
+		"ModelGlowColor"
 		{
-			"animatedtexturevar" "$detail"
-			"animatedtextureframenumvar" "$detailframe"
-			"animatedtextureframerate" 30
+			"resultVar" "$glowcolor"
 		}
-		"BurnLevel"
+		"Equals"
 		{
-			"resultVar" "$detailblendfactor"
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
 		}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
 		}
-		"Equals"
+		"Multiply"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-
 	}
 }
-

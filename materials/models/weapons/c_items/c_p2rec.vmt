@@ -2,15 +2,11 @@
 {
 	$baseTexture "models/weapons/c_items/c_p2rec"
 	"$yellow" "0"
-
-	"$colortint_tmp" "[0 0 0]"
-	"$colortint_base" "{253 253 253}"  
+	"$glowcolor" "1"
 
 	"$phong" "1"
 	"$phongexponent" "30"
 	"$phongboost" "7"      
-//	"$lightwarptexture" "models\weapons\c_items/c_ambassador_lightwarp"         
-//	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"	
 	"$phongfresnelranges"	"[.25 1 4]"
 
@@ -19,7 +15,7 @@
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "1"										// Boost for ambient cube component of rim lighting
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
@@ -43,36 +39,29 @@
 		"invis"
 		{
 		}
-		"AnimatedTexture"
+		"ModelGlowColor"
 		{
-			"animatedtexturevar" "$detail"
-			"animatedtextureframenumvar" "$detailframe"
-			"animatedtextureframerate" 30
+			"resultVar" "$glowcolor"
 		}
-		"BurnLevel"
+		"Equals"
 		{
-			"resultVar" "$detailblendfactor"
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
 		}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
 		}
-		"Equals"
+		"Multiply"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
-  		"ItemTintColor"
-  		{
-   			"resultVar" "$colortint_tmp"
-  		}
-  		"SelectFirstIfNonZero"
- 		{
-   			"srcVar1" "$colortint_tmp"
-   			"srcVar2" "$colortint_base"
-   			"resultVar" "$color2"
-  		}
-
 	}
 }
-

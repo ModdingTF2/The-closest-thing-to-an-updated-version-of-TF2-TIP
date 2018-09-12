@@ -2,10 +2,6 @@
 {
 	"$baseTexture" "models/weapons/c_items/ttg_watch"
 
-	"$basealphaenvmapmask" 1
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[1 1 1]"
-
 	"$basemapalphaphongmask" "1"
 	"$invertphongmask" "1"
 	"$phong" "1"
@@ -15,11 +11,11 @@
 	"$phongfresnelranges"	"[.25 .5 1]"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "4"	
-	"$rimlightboost" ".5"
+	"$rimlightexponent" "20"	
+	"$rimlightboost" "4"
 
 	// Cloaking
-	"$cloakPassEnabled" "0"
+	"$cloakPassEnabled" "1"
 	"$yellow" "0"
 
 	"Proxies"

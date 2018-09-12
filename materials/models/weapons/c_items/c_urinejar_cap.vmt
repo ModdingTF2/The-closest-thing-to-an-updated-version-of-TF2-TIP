@@ -10,10 +10,7 @@
 
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
-	"$rimlightboost" ".5"
-
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.25 .25 .25]"
+	"$rimlightboost" ".25"
 
 	"$glowcolor" "1"
 
@@ -26,6 +23,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -52,6 +51,15 @@
 			"srcVar1"  "$glowcolor"
 			"resultVar" "$color2"
 		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
 	}
 }
-

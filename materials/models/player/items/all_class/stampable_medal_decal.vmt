@@ -11,20 +11,14 @@
 
 	"$phong" "1"
 	"$phongexponent" "8"
-	"$phongboost" "5"
+	"$phongboost" "1"
 	"$phongfresnelranges" "[.25 1 4]"
 		
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" ".5"
-
-	">=DX90"
-	{
-		"$envmap" "env_cubemap"
-		"$envmaptint" "[1.2 1.2 1.9]"
-	}
+	"$rimlightboost" "1"
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
@@ -33,7 +27,7 @@
 		"CustomSteamImageOnModel"
 		{
 		}
-		"weapon_invis"
+		"invis"
 		{
 		}
 		"AnimatedTexture"
@@ -52,11 +46,8 @@
 		}
 		"Equals"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$yellow"
 			"resultVar" "$color2"
 		}
-
 	}
-
 }
-

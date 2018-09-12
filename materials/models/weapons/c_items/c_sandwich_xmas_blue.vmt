@@ -3,13 +3,13 @@
 	"$baseTexture" "models\weapons\c_items/c_sandwich_xmas_blue"
 	"$bumpmap" "models\weapons\c_items/c_sandwich_xmas_normal"
 
-	
-	"$basemapalphaphongmask" 0
+	"$lightwarptexture" "models\lightwarps\softened_weapon_lightwarp"
+	"$bumpmapalphaphongmask" 1
 
 	//phong properties
 	"$phong"	"1"
-	"$phongboost"	"1"
-	"$phongexponent"	"10"
+	"$phongboost"	".1"
+	"$phongexponent"	"80"
 	"$phongfresnelranges"	"[1 2 2.5]"
 	"$rimlight"	"1"
 	"$rimlightexponent"	"1"
@@ -33,6 +33,8 @@
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
 
+	"$yellow" "0"
+
 	"Proxies"
 	{
 		"AnimatedWeaponSheen"
@@ -44,22 +46,7 @@
 		"invis"
 		{
 		}
-		"ModelGlowColor"
-		{
-			"resultVar" "$glowcolor"
-		}
-		"Equals"
-		{
-			"srcVar1"  "$glowcolor"
-			"resultVar" "$selfillumtint"
-		}
-		"Equals"
-		{
-			"srcVar1"  "$glowcolor"
-			"resultVar" "$color2"
-		}
-		
-				"ItemTintColor"
+		"ItemTintColor"
 		{
 			"resultVar" "$colortint_tmp"
 		}
@@ -67,6 +54,16 @@
 		{
 			"srcVar1"	"$colortint_tmp"
 			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

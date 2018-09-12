@@ -2,20 +2,16 @@
 {
 	"$baseTexture" "models/weapons/c_items/c_lollichop"
 
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-	"$detailscale" "5"
-	"$detailblendfactor" .01
-	"$detailblendmode" 6
-
 	"$yellow" "0"
-	"$one" "1"
 
 	"$phong" "1"
 	"$phongexponent" "20"
 	"$phongboost" ".05"	
-	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$lightwarptexture" "models\lightwarps\softened_weapon_lightwarp"
 	"$phongfresnelranges"	"[.3 1 8]"
-	"$halflambert" "0"
+	"$glowcolor" "1"
+
+	"$tempvar" "{256 256 256}"
 
  	"$blendtintbybasealpha" "1" 
 	"$blendtintcoloroverbase" "1"  
@@ -23,15 +19,14 @@
 	"$colortint_base" "{204 64 51}"
 	"$colortint_tmp" "[0 0 0]" 
 
+	"$colortint" "[0 0 0]"
+
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
-	"$rimlightboost" ".5"										// Boost for ambient cube component of rim lighting
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
-
-	"360?$color2" "[ 0.7 0.7 0.7 ]"
-
 	"$sheenPassEnabled" "1"
 
 	"$sheenmap" 		"cubemaps\cubemap_sheen001"
@@ -51,35 +46,42 @@
 		"invis"
 		{
 		}
-		"AnimatedTexture"
-		{
-			"animatedtexturevar" "$detail"
-			"animatedtextureframenumvar" "$detailframe"
-			"animatedtextureframerate" 30
-		}
-		"BurnLevel"
-		{
-			"resultVar" "$detailblendfactor"
-		}
+  		"ItemTintColor"
+  		{
+   			"resultVar" "$colortint_tmp"
+  		}
+		"ModelGlowColor"
+        	{
+         	   	"resultVar" "$glowcolor"
+        	}
+       	 	"Equals"
+        	{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+        	}
+  		"SelectFirstIfNonZero"
+  		{
+   			"srcVar1" "$colortint_tmp"
+   			"srcVar2" "$colortint_base"
+   			"resultVar" "$colortint"
+  		}
+		"LessOrEqual"
+        	{
+               		"LessEqualVar" "$glowcolor"
+               		"greaterVar" "$colortint"
+        	        "srcVar1" "$tempvar"
+       		     	"srcVar2" "$glowcolor"
+       		     	"resultVar" "$color2"
+        	}
 		"YellowLevel"
 		{
 			"resultVar" "$yellow"
 		}
-		"Equals"
+		"Multiply"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
-		}
-		"ItemTintColor"
-		{
-			"resultVar" "$colortint_tmp"
-		}
-		"SelectFirstIfNonZero"
-		{
-			"srcVar1"	"$colortint_tmp"
-			"srcVar2"	"$colortint_base"
-			"resultVar" "$color2"
-		}
-
+		}		
 	}
 }

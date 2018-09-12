@@ -1,20 +1,21 @@
 "VertexlitGeneric"
 {
 	"$baseTexture" "models/player/items/pyro/pyro_tripwire_mask_blue"
-	"$bumpmap" "models/effects/flat_normal" 
+	"$bumpmap" "models/player/items/pyro/pyro_tripwire_mask_normal"
+
 	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "5"
 	"$detailblendfactor" .01
 	"$detailblendmode" 6
 	"$yellow" "0"
 
-	"$phong" ".5"
-	"$phongexponent" "50"
-	"$phongboost" "1"	
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" "4"	
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
-	"$phongfresnelranges"	"[2 1 5]"
-//	"$halflambert" "1"
-//	"$basemapalphaphongmask" "1"
+	"$phongfresnelranges"	"[.2 .5 1]"
+	
+	"$normalmapalphaphongmask" "1"
 
  	"$blendtintbybasealpha" "1" 
  	"$blendtintcoloroverbase" "0"  
@@ -26,16 +27,14 @@
 	// Rim lighting parameters
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
-	"$rimlightboost" ".5"
-
-
+	"$rimlightboost" "2"
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
 
 	"Proxies"
 	{
-		"weapon_invis"
+		"invis"
 		{
 		}
 		"AnimatedTexture"
@@ -48,15 +47,6 @@
 		{
 			"resultVar" "$detailblendfactor"
 		}
-		"YellowLevel"
-		{
-			"resultVar" "$yellow"
-		}
-		"Equals"
-		{
-			"srcVar1"  "$yellow"
-			"resultVar" "$color2"
-		}
 		"ItemTintColor"
 		{
 			"resultVar" "$colortint_tmp"
@@ -67,6 +57,15 @@
 			"srcVar2"	"$colortint_base"
 			"resultVar" "$color2"
 		}
-
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
 	}
 }

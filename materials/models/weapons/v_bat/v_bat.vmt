@@ -2,10 +2,6 @@
 {
 	"$baseTexture" "models\weapons\v_bat/v_bat"
 
-	"$normalmapalphaenvmapmask" 1
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[.02 .02 .02]"
-
 	"$phong" "1"
 	"$phongexponent" "1"
 	"$phongboost" "2.5"	
@@ -16,7 +12,7 @@
 
 	"$rimlight" "1"
 	"$rimlightexponent" "5"	
-	"$rimlightboost" ".5"
+	"$rimlightboost" "3"
 
 	"$glowcolor" "1"
 
@@ -29,6 +25,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -53,6 +51,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

@@ -1,11 +1,9 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models/weapons/c_items/c_proto_medigun_glass"
-	"$surfaceprop"	"glass"
-//	"$bumpmap" "models/props_facemovie/proto_medigun/proto_medigun_glass_normal"
-	"$normalmapalphaenvmapmask" 1
+	"$lightwarptexture" "models/lightwarps/jarate_lightwarp"
 	"$envmap" "env_cubemap"
-	"$envmaptint" "[3 3 3]"
+	"$envmaptint" "[.2 .2 .2]"
 	"$envmapfresnel" 1
 	"$envMapFresnelMinMaxExp" "[2 1 4]"
 	"$baseAlphaEnvMapMaskMinMaxExp" "[0 1 1]"
@@ -17,9 +15,9 @@
 	"$phongexponent"	"30"
 	"$phongfresnelranges"	"[.2 1 4]"
 	
-	"$rimlight" 1
-	"$rimboost" 8
-	
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" "2"
 
 	"$glowcolor" "1"
 	// Cloaking
@@ -32,6 +30,8 @@
 	"$sheenmaptint" 		"[ 1 1 1 ]"
 	"$sheenmapmaskframe" 	"0"
 	"$sheenindex" 		"0"
+
+	"$yellow" "0"
 
 	"Proxies"
 	{
@@ -56,6 +56,16 @@
 		"Equals"
 		{
 			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
 			"resultVar" "$color2"
 		}
 	}

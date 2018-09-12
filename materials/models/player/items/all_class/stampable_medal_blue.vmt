@@ -18,19 +18,13 @@
 
 	"$rimlight" "1"
 	"$rimlightexponent" "4"
-	"$rimlightboost" ".5"
-
-	">=DX90"
-	{
-		"$envmap" "env_cubemap"
-		"$envmaptint" "[1.2 1.2 1.9]"
-	}
+	"$rimlightboost" "1"
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
-		"weapon_invis"
+		"invis"
 		{
 		}
 		"AnimatedTexture"
@@ -49,11 +43,8 @@
 		}
 		"Equals"
 		{
-			"srcVar1"  "$yellow"
+			"srcVar1" "$yellow"
 			"resultVar" "$color2"
 		}
-
 	}
-
 }
-
