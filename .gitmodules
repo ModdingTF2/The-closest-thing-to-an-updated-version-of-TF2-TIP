@@ -1,0 +1,3 @@
+[submodule "docs/archive/TF2VisualFix"]
+	path = docs/archive/TF2VisualFix
+	url = git@github.com:ModdingTF2/TF2VisualFix.git

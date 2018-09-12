@@ -1,5 +1,6 @@
 * text=false
 .gitattributes export-ignore
+.gitmodules export-ignore
 .github/ export-ignore
 docs/ export-ignore
 README.md export-ignore
