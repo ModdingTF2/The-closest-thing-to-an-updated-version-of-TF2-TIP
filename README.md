@@ -2,9 +2,9 @@
 
 ## What is this?
 
-A continuation of [NassimO & Blaholtzen's Team Fortress 2 Texture Improvement Project](https://facepunch.com/showthread.php?t=1251249).
+A continuation of [NassimO & Blaholtzen's Team Fortress 2 Texture Improvement Project](https://web.archive.org/web/20150322004319/http://facepunch.com/showthread.php?t=1251249).
 
-Uses the [Cleanup](https://facepunch.com/showthread.php?t=1251249&p=43119383&viewfull=1#post43119383) files as a base and adds onto it with updates from [Facepunch](https://facepunch.com/) and [GameBanana](https://gamebanana.com/).
+Uses the [Cleanup](https://web.archive.org/web/20160810075557/https://facepunch.com/showthread.php?t=1251249&page=9#post43119383) files as a base and adds onto it with updates from the community.
 
 ## What does it do?
 
@@ -42,13 +42,13 @@ Click on a model to view it on [p3d.in](https://p3d.in/). (Phong isn't 100% accu
 
 Thank you *Valve* for making **Team Fortress 2**!
 
-Thank you *Blaholtzen*, *NassimO*, *Hecates*, *Murphy*, *NeoDement*, *Agent Fedora*, *Chaofanatic*, *Shugo*, and *Sexy Robot* for the original [**Texture Improvement Project**](https://facepunch.com/showthread.php?t=1251249)!
+Thank you *Blaholtzen*, *NassimO*, *Hecates*, *Murphy*, *NeoDement*, *Agent Fedora*, *Chaofanatic*, *Shugo*, and *Sexy Robot* for the original [**Texture Improvement Project**](https://web.archive.org/web/20150322004319/http://facepunch.com/showthread.php?t=1251249)!
 
 Thank you *CheezKurds* for the [**SFM Breadmonster Textures**](https://gamebanana.com/skins/134996)!
 
 Thank you *DioJoestar* for the [**Realistic Bunsen Brave**](https://gamebanana.com/skins/126376), [**Realistic Bootleg Base Metal Billycock**](https://gamebanana.com/skins/126391), [**Realistic HDMI Patch**](https://gamebanana.com/skins/126394), [**Slow Pulse Effect - Tungsten Toque**](https://gamebanana.com/skins/126397), [**Slow Pulse Effect - Filamental**](https://gamebanana.com/skins/126412), [**Slow Pulse Bolt Boy**](https://gamebanana.com/skins/126418), and [**Slow Pulse - Googol Glass Eyes**](https://gamebanana.com/skins/126419)!
 
-Thank you *Filipianosol* for the [**TF2TIP Cleanup**](https://facepunch.com/showthread.php?t=1251249&p=43119383&viewfull=1#post43119383) and [**Mat_picmip -10 Revival**](https://facepunch.com/showthread.php?t=1251249&p=43181174&viewfull=1#post43181174)!
+Thank you *Filipianosol* for the [**TF2TIP Cleanup**](https://web.archive.org/web/20160810075557/https://facepunch.com/showthread.php?t=1251249&page=9#post43119383) and [**Mat_picmip -10 Revival**](https://web.archive.org/web/20160810075557/https://facepunch.com/showthread.php?t=1251249&page=9#post43181174)!
 
 Thank you *FiveEyes* and *Metabolic* for the original **Starboard Crusader** model!
 
@@ -56,7 +56,7 @@ Thank you *Gabrielwoj* for the [**Fixed Vaccinator BLU Team Visor**](https://gam
 
 Thank you *Hawkshadow741* for the [**2013 Festive Fixes**](https://gamebanana.com/skins/131383) and [**A&B Beep Boy and Beep Man**](https://gamebanana.com/skins/129568)!
 
-Thank you *Hecates* for the [**TIP HD Gibs**](https://facepunch.com/showthread.php?t=1251249&p=45690599&viewfull=1#post45690599)!
+Thank you *Hecates* for the [**TIP HD Gibs**](https://web.archive.org/web/20160916200615/https://facepunch.com/showthread.php?t=1251249&page=16#post45690599)!
 
 Thank you *Hellview24* for the [**Cut Throat Concierge Texture Fix**](https://gamebanana.com/skins/126426) and [**Cockswain's Mutton Chops Paint Improvements**](https://gamebanana.com/skins/132672)!
 
